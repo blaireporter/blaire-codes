@@ -61,6 +61,8 @@ input:checked + .slider {
   --gray: #eee;
   --Drk: url(../../../assets/Header-1.jpg);
   --Lgt: url(../../../assets/Header-2.jpg);
+  --filterOn: brightness(0%);
+  --filterOff: brightness(100%) brightness(0) invert(1);
 }
 
 .light-theme {
@@ -71,6 +73,8 @@ input:checked + .slider {
   --fontColor: var(--black);
   --backgroundImg: var(--Lgt);
   --aboutMeBg: var(--whiteTheme);
+  --filtered: var(--filterOn);
+  
 }
 
 .dark-theme {
@@ -82,6 +86,7 @@ input:checked + .slider {
   --fontColor: var(--white);
   --backgroundImg: var(--Drk);
     --aboutMeBg: var(--blackTheme);
+    --filtered: var(--filterOff);
 }
 
 * {
@@ -105,13 +110,7 @@ main {
     background-size: cover;
     height: 90vh;
 }
-.about-me-container {
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    background-color: var(--aboutMeBg);
-    display: flex;
 
-}
 
 
 * {

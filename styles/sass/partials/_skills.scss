@@ -1,5 +1,5 @@
 .skills-container {
-    background-image: url(../../../assets/Header-2.jpg);
+    background-image: var(--backgroundImg);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 100px;
@@ -9,12 +9,13 @@
 .skills-icons {
     margin: 0 auto;
     max-width: 800px;
-    border: 20px solid #171717;
-    background-color: white;
+    border-color: var(--aboutMeBg);
+    border: 20px solid;
+    background-color: var(--aboutMeBg);
     
     
     h4 {
-        color: #171717;
+        color: var(--fontColor);
         margin-top: 20px;
         margin-bottom: 0;
         font-family: 'Oswald', sans-serif;
@@ -26,7 +27,7 @@
     ul {
         display: flex;
         flex-wrap: wrap;
-        background-color: white;
+        background-color: var(--aboutMeBg);
         margin: 0 auto;
 
 
@@ -35,12 +36,14 @@
             font-size: 2rem;
             padding: 40px;
             
+            
             .icon {
                 color: #171717;
                 font-size: 80px;
                 width: 80px;
-                filter: brightness(0%);
+                color: var(--fontColor);
                 transition: 0.4s ease-in-out;
+                
         
         
                &:hover,
@@ -98,10 +101,16 @@
             .fa-mobile-alt:focus{
                 color: #8641BE;
             }
+
+            .firebase,
+            .jquery {
+                filter: var(--filtered);
+            }
         }
     }
     
 }
+
 .app-name {
     position: relative;
     padding-top: 0;
@@ -130,3 +139,4 @@
 .responsive{
     transform: translate(-30%);
 }
+

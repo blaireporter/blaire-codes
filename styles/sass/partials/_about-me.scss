@@ -3,7 +3,10 @@
 }
 
 .about-me-container {
-    background-color: #171717;
+    border-color: var(--aboutMeBg);
+    border-top: 25px solid;
+    border-bottom: 25px solid;
+    background-color: var(--aboutMeBg);
     display: flex;
 }
 

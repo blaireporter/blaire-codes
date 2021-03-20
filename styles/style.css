@@ -463,7 +463,10 @@ nav .navigate {
 }
 
 .about-me-container {
-  background-color: #171717;
+  border-color: var(--aboutMeBg);
+  border-top: 25px solid;
+  border-bottom: 25px solid;
+  background-color: var(--aboutMeBg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -526,7 +529,7 @@ nav .navigate {
 }
 
 .skills-container {
-  background-image: url(../../../assets/Header-2.jpg);
+  background-image: var(--backgroundImg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 100px;
@@ -536,12 +539,13 @@ nav .navigate {
 .skills-icons {
   margin: 0 auto;
   max-width: 800px;
-  border: 20px solid #171717;
-  background-color: white;
+  border-color: var(--aboutMeBg);
+  border: 20px solid;
+  background-color: var(--aboutMeBg);
 }
 
 .skills-icons h4 {
-  color: #171717;
+  color: var(--fontColor);
   margin-top: 20px;
   margin-bottom: 0;
   font-family: 'Oswald', sans-serif;
@@ -556,7 +560,7 @@ nav .navigate {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: white;
+  background-color: var(--aboutMeBg);
   margin: 0 auto;
 }
 
@@ -570,8 +574,7 @@ nav .navigate {
   color: #171717;
   font-size: 80px;
   width: 80px;
-  -webkit-filter: brightness(0%);
-          filter: brightness(0%);
+  color: var(--fontColor);
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -629,6 +632,12 @@ nav .navigate {
 .skills-icons ul li .fa-mobile-alt:hover,
 .skills-icons ul li .fa-mobile-alt:focus {
   color: #8641BE;
+}
+
+.skills-icons ul li .firebase,
+.skills-icons ul li .jquery {
+  -webkit-filter: var(--filtered);
+          filter: var(--filtered);
 }
 
 .app-name {
@@ -737,6 +746,8 @@ input:checked + .slider {
   --gray: #eee;
   --Drk: url(../../../assets/Header-1.jpg);
   --Lgt: url(../../../assets/Header-2.jpg);
+  --filterOn: brightness(0%);
+  --filterOff: brightness(100%) brightness(0) invert(1);
 }
 
 .light-theme {
@@ -747,6 +758,7 @@ input:checked + .slider {
   --fontColor: var(--black);
   --backgroundImg: var(--Lgt);
   --aboutMeBg: var(--whiteTheme);
+  --filtered: var(--filterOn);
 }
 
 .dark-theme {
@@ -757,6 +769,7 @@ input:checked + .slider {
   --fontColor: var(--white);
   --backgroundImg: var(--Drk);
   --aboutMeBg: var(--blackTheme);
+  --filtered: var(--filterOff);
 }
 
 * {
@@ -779,15 +792,6 @@ header {
   background-image: var(--backgroundImg);
   background-size: cover;
   height: 90vh;
-}
-
-.about-me-container {
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-  background-color: var(--aboutMeBg);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 * {
