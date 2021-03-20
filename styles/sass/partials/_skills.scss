@@ -1,0 +1,132 @@
+.skills-container {
+    background-image: url(../../../assets/Header-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.skills-icons {
+    margin: 0 auto;
+    max-width: 800px;
+    border: 20px solid #171717;
+    background-color: white;
+    
+    
+    h4 {
+        color: #171717;
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5rem;
+    }
+    
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        margin: 0 auto;
+
+
+        li {
+            margin: 0 auto;
+            font-size: 2rem;
+            padding: 40px;
+            
+            .icon {
+                color: #171717;
+                font-size: 80px;
+                width: 80px;
+                filter: brightness(0%);
+                transition: 0.4s ease-in-out;
+        
+        
+               &:hover,
+               &:focus {
+                   filter: brightness(100%);
+               } 
+            }
+
+            .fa-js-square:hover,
+            .fa-js-square:focus {
+                color: #F9E000;
+            }
+
+            .fa-sass:hover,
+            .fa-sass:focus{
+                color: #C03E82;
+            }
+
+            .fa-html5:hover,
+            .fa-html5:focus{
+                color: #E98348;
+            }
+
+            .fa-css3-alt:hover,
+            .fa-css3-alt:focus{
+                color: #62ABF5;
+            }
+
+            .fa-react:hover,
+            .fa-react:focus {
+                color: #64D8FD;
+            }
+
+            .fa-github:hover,
+            .fa-github:focus{
+                color: #333232;
+            }
+
+            .fa-git-alt:hover,
+            .fa-git-alt:focus{
+                color: #EE4C33;
+            }
+
+            .fa-terminal:hover,
+            .fa-terminal:focus{
+                color: #1ED215;
+            }
+
+            .fa-universal-access:hover,
+            .fa-universal-access:focus {
+                color: #155196;
+            }
+
+            .fa-mobile-alt:hover,
+            .fa-mobile-alt:focus{
+                color: #8641BE;
+            }
+        }
+    }
+    
+}
+.app-name {
+    position: relative;
+    padding-top: 0;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.html{
+    transform: translate(-10%)
+}
+.css{
+    transform: translate(-14%)
+}
+.git{
+    transform: translate(-7%);
+}
+
+.accessibility{
+    transform: translate(-5%);
+}
+
+.responsive{
+    transform: translate(-30%);
+}

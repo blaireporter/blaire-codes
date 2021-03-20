@@ -1,0 +1,128 @@
+.logo {
+  height: 40px;
+    margin: 0 auto;
+    margin: 15px 0 15px 40px;
+}
+
+.logo-link {
+  border-bottom: none;
+
+
+  a:hover,
+  a:focus{
+    border-bottom: none;
+  }
+}
+
+nav {
+  width: 100%;
+  background-color: #171717;
+  @include mobiletMQ {
+    visibility: hidden;
+  }
+
+  i {
+    color: white;
+    font-size: 2rem;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-top: -80px;
+    margin-right: 80px;
+    padding: 15px 0 20px 0;
+  }
+
+  li {
+    padding: 20px;
+    padding-bottom: 0;
+    display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+  margin-right: 10px;
+    
+  }
+
+  li:last-child {
+  margin-right: 0;
+}
+  li:hover {
+  }
+
+  li:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+li:hover:after {
+  width: 100%;
+  background: white;
+}
+  
+  .navigate {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: white;
+    border-bottom: 2px solid #171717;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 3px;
+  }
+  
+}
+
+  .hamburger-menu  {
+  position: relative;
+  display: none;
+  color: white;
+  font-size: 3rem;
+  right: -120px;
+  @include mobiletMQ {
+    visibility: visible;
+      display: inline;
+
+}
+}
+
+.dropdown-menu li {
+  float: left;
+  list-style-type: none;
+  position: relative;
+  padding: 7px;
+} 
+
+
+.sub-menu {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+  .sub-menu li {
+  font-size: 2rem;
+  float: none;
+  background-color: #0c1423;
+  display: flex;
+}
+
+.dropdown-menu li:focus-within .sub-menu {
+  height: auto;
+  overflow: auto;
+  top: 45px;
+  right: -120px;
+  flex-direction: column;
+  background-color: #0c1423;
+  border-left: 3px solid #86e0f9;
+  border-bottom: 3px solid #86e0f9;
+  display: none;
+  z-index: 500;
+}
