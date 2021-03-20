@@ -4,7 +4,10 @@
     background-repeat: no-repeat;
     padding-top: 100px;
     padding-bottom: 100px;
+     border-bottom: 25px solid;
+    background-color: var(--aboutMeBg);
 }
+
 
 .skills-icons {
     margin: 0 auto;
@@ -105,6 +108,9 @@
             .firebase,
             .jquery {
                 filter: var(--filtered);
+            }
+            .firebase{
+                width: 70px;
             }
         }
     }

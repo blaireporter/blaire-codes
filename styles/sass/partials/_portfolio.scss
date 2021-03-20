@@ -1,0 +1,16 @@
+.portfolio-container {
+      background-color: blue;
+      padding: 100px 0;
+       border-bottom: 25px solid;
+    background-color: var(--aboutMeBg);
+
+    h4 {
+        color: var(--fontColor);
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5rem;
+    }
+}
