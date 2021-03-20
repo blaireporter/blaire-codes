@@ -1,0 +1,132 @@
+:root {
+  --navHeight: 70px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.switch {
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch div {
+  position: relative;
+  display: block;
+  background: #eee;
+  width: 30px;
+  border-radius: 50px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.fa-adjust {
+  transform: rotate(180deg);
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 34px;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  position: relative;
+}
+
+input:checked + .slider {
+  transform: translateX(8px);
+}
+
+
+:root {
+//   --navHeight: 70px;
+  --blackTheme: #171717;
+  --whiteTheme: white;
+  --paleSpringBud: #DEDABA;
+  --goldCrayola: #E5C687;
+  --richBlackForeground: #171717;
+  --white: #f8f8f8;
+  --black: #222;
+  --msuGreen: #171717;
+  --gray: #eee;
+  --Drk: url(../../../assets/Header-1.jpg);
+  --Lgt: url(../../../assets/Header-2.jpg);
+}
+
+.light-theme {
+  --themeDropDownBg: var(--goldCrayola);
+  --themeIconBorderColor: var(--blackTheme);
+  --navBg: var(--blackTheme);
+  --mainBg: var(--goldCrayola);
+  --fontColor: var(--black);
+  --backgroundImg: var(--Lgt);
+  --aboutMeBg: var(--whiteTheme);
+}
+
+.dark-theme {
+  --themeDropDownBg: var(--msuGreen);
+  --themeIconBorderColor: var(--richBlackForeground);
+  --navBg: var(--richBlackForeground);
+//   --navLinkHoverBg: var(--msuGreen);
+  --mainBg: var(--msuGreen);
+  --fontColor: var(--white);
+  --backgroundImg: var(--Drk);
+    --aboutMeBg: var(--blackTheme);
+}
+
+* {
+  color: var(--fontColor);
+}
+
+nav {
+  background: var(--navBg);
+}
+
+nav ul li:hover {
+  background-color: var(--navLinkHoverBg);
+}
+
+main {
+  background: var(--mainBg);
+}
+
+ header {
+    background-image: var(--backgroundImg);
+    background-size: cover;
+    height: 90vh;
+}
+.about-me-container {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-color: var(--aboutMeBg);
+    display: flex;
+
+}
+
+
+* {
+  transition: background-color 0.6s ease, color 1s ease;
+}
+
+.light-theme {
+  --themeSwitchColor: var(--blackTheme);
+}
+
+.dark-theme {
+  --themeSwitchColor: var(--msuGreen);
+}
+
+.slider {
+  background-color: var(--themeSwitchColor);
+}
+
