@@ -1,8 +1,8 @@
 .portfolio-container {
-      background-color: blue;
-      padding: 100px 0;
-       border-bottom: 25px solid;
-    background-color: var(--aboutMeBg);
+        background-color: blue;
+        padding: 100px 0;
+        border-bottom: 25px solid;
+        background-color: var(--aboutMeBg);
 
     h4 {
         color: var(--fontColor);
@@ -12,5 +12,6 @@
         text-transform: uppercase;
         text-align: center;
         font-size: 5rem;
+        margin-bottom: 20px;
     }
 }

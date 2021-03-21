@@ -51,7 +51,7 @@
             <img src="./assets/blaire-codes-3.png" alt="" class="title">
             <div class="resume-container">
                 <a href="./assets/resume/blaire-porter-resume.pdf" download="blairePorterResume" >
-                    <button>Download My Resume</button>
+                    <button> Download My Resume</button>
                 </a>
             </div>
         </div>
@@ -165,6 +165,24 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
         </div>
+    </section>
+    <section class="contact">
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/moqyajdl"
+        method="post">
+        <h3 class="contact-me">Contact Me!</h3>
+        <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message"
+                placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+                required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
     </section>
     <script src="./js/script.js"></script>
 </body>
