@@ -27,4 +27,30 @@ header {
     width: 100%;
     padding: 30px;
 } 
+
+.resume-container{
+    text-align: center;
+
+    button{
+        font-size: 1.5rem;
+        font-family: 'Oswald', sans-serif;
+        padding: 5px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: white;
+        text-transform: uppercase;
+        border: 2px solid white;
+
+        &:hover,
+        &:focus{
+            border: 2px solid yellow;
+        }
+
+    }
+}
+
+
+
+
 // *************ABOUT ME SECTION*************
