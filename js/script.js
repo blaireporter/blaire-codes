@@ -12,11 +12,15 @@ hamburgerMenu.addEventListener("click", function (event) {
 
 const subMenu = document.querySelector(".sub-menu");
 
+// *******HAMBURBER MENU END*********
+
 const themeSwitch = document.querySelector('input');
 
 themeSwitch.addEventListener('change', () => {
     document.body.classList.toggle('dark-theme');
 });
+
+// *********DARK LIGHT MODE END*****
 
 
 var slideIndex = 1;

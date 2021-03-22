@@ -480,18 +480,6 @@ nav .navigate {
   z-index: 500;
 }
 
-@media (max-width: 700px) {
-  .switch {
-    margin: 30px;
-  }
-}
-
-@media (max-width: 700px) {
-  .switch i {
-    display: none;
-  }
-}
-
 .about-me-container {
   border-color: var(--aboutMeBg);
   border-top: 25px solid;
