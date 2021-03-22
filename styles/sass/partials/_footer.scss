@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    
+    
+    p{
+        font-size: 2rem;
+    }
+
+    p:first-of-type{
+        left: 0%;
+    }
+     p:last-of-type{
+        right: 0%;
+    }
+}

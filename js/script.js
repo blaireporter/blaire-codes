@@ -48,3 +48,6 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
 }
 
+
+const form = document.getElementById("fs-frm");
+form.reset();

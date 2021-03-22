@@ -75,6 +75,7 @@ input:checked + .slider {
   --aboutMeBg: var(--whiteTheme);
   --filtered: var(--filterOn);
   --dot: var(--blackTheme);
+  --form: var(--blackTheme);
   
 }
 
@@ -89,6 +90,8 @@ input:checked + .slider {
     --aboutMeBg: var(--blackTheme);
     --filtered: var(--filterOff);
     --dot: var(--whiteTheme);
+    --form: var(--whiteTheme);
+
 }
 
 * {
