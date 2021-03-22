@@ -16,7 +16,7 @@
   }
 }
 
-@mixin mobiletMQ {
+@mixin mobileMQ {
   @media (max-width: 768px) {
     @content;
   }

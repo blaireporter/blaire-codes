@@ -4,10 +4,11 @@
     margin: 15px 0 15px 40px;
 }
 
+
 .logo-link {
   border-bottom: none;
-
-
+  
+  
   a:hover,
   a:focus{
     border-bottom: none;
@@ -17,15 +18,15 @@
 nav {
   width: 100%;
   background-color: #171717;
-  @include mobiletMQ {
-    visibility: hidden;
+  @media(max-width:700px) {
+    // visibility: hidden;
   }
-
+  
   i {
     color: white;
     font-size: 2rem;
   }
-
+  
   ul {
     display: flex;
     justify-content: flex-end;
@@ -34,37 +35,37 @@ nav {
     margin-right: 80px;
     padding: 15px 0 20px 0;
   }
-
+  
   li {
     padding: 20px;
     padding-bottom: 0;
     display: inline-block;
-  position: relative;
-  padding-bottom: 3px;
-  margin-right: 10px;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 10px;
     
   }
-
+  
   li:last-child {
-  margin-right: 0;
-}
+    margin-right: 0;
+  }
   li:hover {
   }
-
+  
   li:after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 3px;
-  width: 0px;
-  background: transparent;
-  transition: width .5s ease, background-color .5s ease;
-}
-
-li:hover:after {
-  width: 100%;
-  background: white;
-}
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+  }
+  
+  li:hover:after {
+    width: 100%;
+    background: white;
+  }
   
   .navigate {
     font-family: 'Oswald', sans-serif;
@@ -79,17 +80,16 @@ li:hover:after {
   
 }
 
-  .hamburger-menu  {
+.hamburger-menu  {
   position: relative;
   display: none;
-  color: white;
+  color: black;
   font-size: 3rem;
-  right: -120px;
-  @include mobiletMQ {
+  @media(max-width:700px) {
+    display: inline;
     visibility: visible;
-      display: inline;
-
-}
+    
+  }
 }
 
 .dropdown-menu li {
@@ -107,7 +107,7 @@ li:hover:after {
   padding: 0;
 }
 
-  .sub-menu li {
+.sub-menu li {
   font-size: 2rem;
   float: none;
   background-color: #0c1423;
