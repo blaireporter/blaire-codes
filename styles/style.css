@@ -493,7 +493,7 @@ nav .navigate {
 .about-me-content {
   width: 50%;
   color: white;
-  margin: 200px 0 20px 100px;
+  margin: 200px 0 20px 200px;
   overflow: auto;
 }
 
@@ -529,7 +529,7 @@ nav .navigate {
   max-width: 500px;
   width: 50%;
   position: relative;
-  margin: 100px 0;
+  margin: 100px 200px;
 }
 
 .drawing {
