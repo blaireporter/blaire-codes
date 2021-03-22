@@ -1,17 +1,14 @@
 footer{
     display: flex;
-    margin: 10px;
     text-align: center;
+    background-color: var(--aboutMeBg);
+    border: none;
     
     
     p{
+        color: var(--fontColor);
         font-size: 2rem;
-    }
-
-    p:first-of-type{
-        left: 0%;
-    }
-     p:last-of-type{
-        right: 0%;
+        padding: 20px;
+        margin: 0 auto;
     }
 }

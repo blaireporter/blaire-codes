@@ -989,7 +989,12 @@ header {
   padding-top: 100px;
   padding-bottom: 100px;
   border-bottom: 25px solid;
-  background-color: var(--aboutMeBg);
+  background-color: var(--form);
+}
+
+h4 {
+  text-align: center;
+  font-size: 5rem;
 }
 
 form {
@@ -1057,18 +1062,14 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 10px;
   text-align: center;
+  background-color: var(--aboutMeBg);
+  border: none;
 }
 
 footer p {
+  color: var(--fontColor);
   font-size: 2rem;
-}
-
-footer p:first-of-type {
-  left: 0%;
-}
-
-footer p:last-of-type {
-  right: 0%;
+  padding: 20px;
+  margin: 0 auto;
 }
