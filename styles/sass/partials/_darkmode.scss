@@ -63,6 +63,9 @@ input:checked + .slider {
   --Lgt: url(../../../assets/Header-2.jpg);
   --filterOn: brightness(0%);
   --filterOff: brightness(100%) brightness(0) invert(1);
+  --logoFilterOn: invert(100%);
+  --logoFilterOff: invert(0%);
+
 }
 
 .light-theme {
@@ -76,6 +79,7 @@ input:checked + .slider {
   --filtered: var(--filterOn);
   --dot: var(--blackTheme);
   --form: var(--blackTheme);
+  --logo: var(--logoFilterOn);
   
 }
 
@@ -91,6 +95,7 @@ input:checked + .slider {
     --filtered: var(--filterOff);
     --dot: var(--whiteTheme);
     --form: var(--whiteTheme);
+    --logo: var(--logoFilterOff);
 
 }
 

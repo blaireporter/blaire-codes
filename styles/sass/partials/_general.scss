@@ -5,26 +5,23 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
-header {
-    background-color: #171717;
-}
-
  header {
     background-image: url(../../../assets/Header-1.jpg);
     background-size: cover;
-    height: 20vh;
 }
 
 .header-container {
-    background-color: #171717;
+    background-color: var(--aboutMeBg);
     width: 500px;
     margin: 0 auto;
     margin-top: 12%;
-    border: 20px solid white;
+    border: 20px solid;
+    border-color: var(--form);
 }
 .title {
     width: 100%;
     padding: 30px;
+    filter: var(--logo);
 } 
 
 .resume-container{
