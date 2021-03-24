@@ -745,6 +745,28 @@ nav .navigate {
   margin-bottom: 20px;
 }
 
+.portfolio-container .portfolio-projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 100px 30px;
+}
+
+.portfolio-container .portfolio-projects .project-image {
+  width: 400px;
+  margin-right: 100px;
+}
+
+.portfolio-container .portfolio-projects .project-info {
+  max-width: 300px;
+}
+
+.portfolio-container .portfolio-projects:nth-child(3) {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 :root {
   --navHeight: 70px;
 }
