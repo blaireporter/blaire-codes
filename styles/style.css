@@ -351,6 +351,70 @@ header {
   border: 2px solid yellow;
 }
 
+.icon {
+  color: #171717;
+  font-size: 80px;
+  color: var(--fontColor);
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.fa-js-square:hover,
+.fa-js-square:focus {
+  color: #F9E000;
+}
+
+.fa-sass:hover,
+.fa-sass:focus {
+  color: #C03E82;
+}
+
+.fa-html5:hover,
+.fa-html5:focus {
+  color: #E98348;
+}
+
+.fa-css3-alt:hover,
+.fa-css3-alt:focus {
+  color: #62ABF5;
+}
+
+.fa-react:hover,
+.fa-react:focus {
+  color: #64D8FD;
+}
+
+.fa-github:hover,
+.fa-github:focus {
+  color: #333232;
+}
+
+.fa-git-alt:hover,
+.fa-git-alt:focus {
+  color: #EE4C33;
+}
+
+.fa-terminal:hover,
+.fa-terminal:focus {
+  color: #1ED215;
+}
+
+.fa-universal-access:hover,
+.fa-universal-access:focus {
+  color: #155196;
+}
+
+.fa-mobile-alt:hover,
+.fa-mobile-alt:focus {
+  color: #8641BE;
+}
+
+.firebase,
+.jquery {
+  -webkit-filter: var(--filtered);
+          filter: var(--filtered);
+}
+
 .logo {
   height: 40px;
   margin: 0 auto;
@@ -736,7 +800,7 @@ nav .navigate {
 
 .portfolio-container {
   background-color: blue;
-  padding: 100px 0;
+  padding: 50px 0;
   border-bottom: 25px solid;
   background-color: var(--aboutMeBg);
 }
@@ -757,10 +821,10 @@ nav .navigate {
   display: -ms-flexbox;
   display: flex;
   margin: 100px 30px;
+  margin-right: 50px;
 }
 
 .portfolio-container .portfolio-projects .project-image {
-  margin-right: 100px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   width: 100%;
@@ -776,11 +840,13 @@ nav .navigate {
 }
 
 .portfolio-container .portfolio-projects .project-info {
-  max-width: 300px;
+  margin-top: 50px;
+  max-width: 400px;
+  width: 100%;
 }
 
-.portfolio-container .portfolio-projects:nth-child(3),
-.portfolio-container .portfolio-projects:nth-child(5) {
+.portfolio-container .portfolio-projects:nth-child(2),
+.portfolio-container .portfolio-projects:nth-child(4) {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -790,11 +856,57 @@ nav .navigate {
           flex-direction: row-reverse;
 }
 
-.firebase,
-.jquery {
+.portfolio-container .firebase,
+.portfolio-container .jquery {
   -webkit-filter: var(--filtered);
           filter: var(--filtered);
   width: 30px;
+  margin: 0 6px;
+  padding-top: 10px;
+}
+
+.portfolio-container h5 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.portfolio-container .project-description {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.portfolio-container .project-links,
+.portfolio-container span {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--aboutMeBg);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+.portfolio-container .project-links:hover, .portfolio-container .project-links:focus,
+.portfolio-container span:hover,
+.portfolio-container span:focus {
+  border-bottom: 2px solid var(--form);
+}
+
+.portfolio-container p {
+  font-size: 2rem;
+}
+
+.portfolio-container .icons {
+  margin-top: 20px;
+}
+
+.portfolio-container i {
+  font-size: 40px;
+  padding: 0 10px;
+}
+
+.portfolio-container i:first-child {
+  padding: 0;
 }
 
 :root {
@@ -1172,7 +1284,7 @@ footer p {
   transform: rotateZ(0deg);
 }
 
-.is-visible .heading {
+.is-visible {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }

@@ -63,4 +63,65 @@ body {
 
 
 
-// *************ABOUT ME SECTION*************
+// *************ICONS GENERAL*************
+    .icon {
+                color: #171717;
+                font-size: 80px;
+                color: var(--fontColor);
+                transition: 0.4s ease-in-out;
+            }
+
+            .fa-js-square:hover,
+            .fa-js-square:focus {
+                color: #F9E000;
+            }
+
+            .fa-sass:hover,
+            .fa-sass:focus{
+                color: #C03E82;
+            }
+
+            .fa-html5:hover,
+            .fa-html5:focus{
+                color: #E98348;
+            }
+
+            .fa-css3-alt:hover,
+            .fa-css3-alt:focus{
+                color: #62ABF5;
+            }
+
+            .fa-react:hover,
+            .fa-react:focus {
+                color: #64D8FD;
+            }
+
+            .fa-github:hover,
+            .fa-github:focus{
+                color: #333232;
+            }
+
+            .fa-git-alt:hover,
+            .fa-git-alt:focus{
+                color: #EE4C33;
+            }
+
+            .fa-terminal:hover,
+            .fa-terminal:focus{
+                color: #1ED215;
+            }
+
+            .fa-universal-access:hover,
+            .fa-universal-access:focus {
+                color: #155196;
+            }
+
+            .fa-mobile-alt:hover,
+            .fa-mobile-alt:focus{
+                color: #8641BE;
+            }
+
+            .firebase,
+            .jquery {
+                filter: var(--filtered);
+            }

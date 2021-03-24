@@ -1,6 +1,6 @@
 .portfolio-container {
         background-color: blue;
-        padding: 100px 0;
+        padding: 50px 0;
         border-bottom: 25px solid;
         background-color: var(--aboutMeBg);
 
@@ -18,9 +18,9 @@
     .portfolio-projects{
         display: flex;
         margin: 100px 30px;
+        margin-right: 50px;
 
         .project-image {
-        margin-right: 100px;
         -webkit-filter: grayscale(100%); 
         filter: grayscale(100%);
         width: 100%;
@@ -35,21 +35,68 @@
     }
 
         .project-info{
-            max-width: 300px;
+            margin-top: 50px;
+            max-width: 400px;
+            width: 100%;
         }
     }
 
-    .portfolio-projects:nth-child(3),
-    .portfolio-projects:nth-child(5) {
+    .portfolio-projects:nth-child(2),
+    .portfolio-projects:nth-child(4) {
         justify-content: flex-end;
         flex-direction: row-reverse;
     }
+
+    .firebase,
+    .jquery {
+        filter: var(--filtered);
+        width: 30px;
+        margin: 0 6px;
+        padding-top: 10px;
+    }
+
+    h5{
+        font-size: 4rem;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .project-description{
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .project-links,
+    span {
+        font-size: 2rem;
+        border-bottom: 2px solid var(--aboutMeBg);
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        transition: 0.4s ease-in-out;
+
+
+
+        &:hover,
+        &:focus{
+            border-bottom: 2px solid var(--form);
+        }
+    }
+    p{
+        font-size: 2rem;
+    }
+
+    .icons{
+        margin-top: 20px;
+    }
+
+    i{
+        font-size: 40px;
+        padding: 0 10px;
+    }
+
+    i:first-child{
+        padding: 0;
+    }
 }
 
-.firebase,
-.jquery 
-{
-    filter: var(--filtered);
-    width: 30px;
-}
 
