@@ -310,11 +310,17 @@ header {
 
 .header-container {
   background-color: var(--aboutMeBg);
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
-  margin-top: 12%;
+  margin-top: 16%;
   border: 20px solid;
   border-color: var(--form);
+}
+
+.header-container .header-icon {
+  font-size: 5rem;
+  padding: 10px;
 }
 
 .title {
@@ -326,6 +332,7 @@ header {
 
 .resume-container {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .resume-container button {
@@ -334,10 +341,10 @@ header {
   padding: 5px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 20px;
-  background-color: white;
+  border-radius: 25px;
+  background-color: var(--aboutMeBg);
   text-transform: uppercase;
-  border: 2px solid white;
+  border: 2px solid var(--form);
 }
 
 .resume-container button:hover, .resume-container button:focus {
@@ -755,6 +762,17 @@ nav .navigate {
 .portfolio-container .portfolio-projects .project-image {
   width: 400px;
   margin-right: 100px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width: 900px;
+  -webkit-transition: 0.6s ease-in-out;
+  transition: 0.6s ease-in-out;
+}
+
+.portfolio-container .portfolio-projects .project-image:hover,
+.portfolio-container .portfolio-projects .project-image:focus {
+  -webkit-filter: none;
+  filter: none;
 }
 
 .portfolio-container .portfolio-projects .project-info {

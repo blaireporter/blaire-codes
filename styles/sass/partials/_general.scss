@@ -15,11 +15,17 @@ body {
 
 .header-container {
     background-color: var(--aboutMeBg);
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
-    margin-top: 12%;
+    margin-top: 16%;
     border: 20px solid;
     border-color: var(--form);
+
+    .header-icon{
+        font-size: 5rem;
+        padding: 10px;
+    }
 }
 .title {
     width: 100%;
@@ -27,8 +33,11 @@ body {
     filter: var(--logo);
 } 
 
+
+
 .resume-container{
     text-align: center;
+    margin-bottom: 20px;
 
     button{
         font-size: 1.5rem;
@@ -36,10 +45,10 @@ body {
         padding: 5px;
         display: block;
         margin: 0 auto;
-        margin-bottom: 20px;
-        background-color: white;
+        border-radius: 25px;
+        background-color: var(--aboutMeBg);
         text-transform: uppercase;
-        border: 2px solid white;
+        border: 2px solid var(--form);
 
         &:hover,
         &:focus{

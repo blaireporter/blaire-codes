@@ -19,12 +19,20 @@
         display: flex;
         margin: 100px 30px;
 
-
-
         .project-image{
-            width: 400px;
-            margin-right: 100px;
-        }
+        width: 400px;
+        margin-right: 100px;
+        -webkit-filter: grayscale(100%); 
+        filter: grayscale(100%);
+        width: 900px;
+        transition: 0.6s ease-in-out;
+    }
+
+    .project-image:hover,
+    .project-image:focus{
+        -webkit-filter: none;
+        filter: none;
+    }
 
         .project-info{
             max-width: 300px;
