@@ -19,12 +19,12 @@
         display: flex;
         margin: 100px 30px;
 
-        .project-image{
-        width: 400px;
+        .project-image {
         margin-right: 100px;
         -webkit-filter: grayscale(100%); 
         filter: grayscale(100%);
-        width: 900px;
+        width: 100%;
+        max-width: 700px;
         transition: 0.6s ease-in-out;
     }
 
@@ -39,7 +39,17 @@
         }
     }
 
-    .portfolio-projects:nth-child(3){
+    .portfolio-projects:nth-child(3),
+    .portfolio-projects:nth-child(5) {
         justify-content: flex-end;
+        flex-direction: row-reverse;
     }
 }
+
+.firebase,
+.jquery 
+{
+    filter: var(--filtered);
+    width: 30px;
+}
+

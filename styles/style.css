@@ -760,11 +760,11 @@ nav .navigate {
 }
 
 .portfolio-container .portfolio-projects .project-image {
-  width: 400px;
   margin-right: 100px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  width: 900px;
+  width: 100%;
+  max-width: 700px;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
 }
@@ -779,10 +779,22 @@ nav .navigate {
   max-width: 300px;
 }
 
-.portfolio-container .portfolio-projects:nth-child(3) {
+.portfolio-container .portfolio-projects:nth-child(3),
+.portfolio-container .portfolio-projects:nth-child(5) {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.firebase,
+.jquery {
+  -webkit-filter: var(--filtered);
+          filter: var(--filtered);
+  width: 30px;
 }
 
 :root {
