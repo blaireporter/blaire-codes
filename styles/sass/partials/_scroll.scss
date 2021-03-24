@@ -1,0 +1,29 @@
+.inline-photo {
+  opacity: 0;
+  -webkit-transform: rotateZ(-8deg);
+          transform: rotateZ(-8deg);
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 2s .25s;
+  transition: opacity .3s .25s ease-out,
+              -webkit-transform 2s .25s;
+  transition: transform 2s .25s,
+              opacity .3s .25s ease-out;
+  transition: transform 2s .25s,
+              opacity .3s .25s ease-out,
+              -webkit-transform 2s .25s;
+  // width: 90%;
+
+  will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  -webkit-transform: rotateZ(0deg);
+          transform: rotateZ(0deg);
+}
+
+.is-visible .heading {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+

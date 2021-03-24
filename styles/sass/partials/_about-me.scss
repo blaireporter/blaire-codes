@@ -52,10 +52,12 @@
 }
 
 .drawing {
+    max-width: 400px;
     width:100%;
     position: absolute;
     z-index: 3;
     transition: 0.5s ease-in-out;
+    border: 20px solid var(--form);
 
     &:hover {
         opacity: 0%;
@@ -64,10 +66,22 @@
         -ms-transition: opacity 0.5s ease-in-out;
         -o-transition: opacity 0.5s ease-in-out;
     }
+
+     @media(max-width: 700px){
+        max-width: 300px;
+        width: 300px;
+    }
 }
 
 .photo {
+    max-width: 400px;
     width:100%;
     position: inherit;
     z-index: 2;
+    border: 20px solid var(--form);
+
+    @media(max-width: 700px){
+        max-width: 300px;
+        width: 300px;
+    }
 }

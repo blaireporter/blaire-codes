@@ -303,7 +303,9 @@ body {
 
 header {
   background-image: url(../../../assets/Header-1.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .header-container {
@@ -533,11 +535,13 @@ nav .navigate {
 }
 
 .drawing {
+  max-width: 400px;
   width: 100%;
   position: absolute;
   z-index: 3;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  border: 20px solid var(--form);
 }
 
 .drawing:hover {
@@ -548,10 +552,26 @@ nav .navigate {
   -o-transition: opacity 0.5s ease-in-out;
 }
 
+@media (max-width: 700px) {
+  .drawing {
+    max-width: 300px;
+    width: 300px;
+  }
+}
+
 .photo {
+  max-width: 400px;
   width: 100%;
   position: inherit;
   z-index: 2;
+  border: 20px solid var(--form);
+}
+
+@media (max-width: 700px) {
+  .photo {
+    max-width: 300px;
+    width: 300px;
+  }
 }
 
 .skills-container {
@@ -1081,4 +1101,26 @@ footer p {
   font-size: 2rem;
   padding: 20px;
   margin: 0 auto;
+}
+
+.inline-photo {
+  opacity: 0;
+  -webkit-transform: rotateZ(-8deg);
+  transform: rotateZ(-8deg);
+  -webkit-transition: opacity .3s .25s ease-out, -webkit-transform 2s .25s;
+  transition: opacity .3s .25s ease-out, -webkit-transform 2s .25s;
+  transition: transform 2s .25s, opacity .3s .25s ease-out;
+  transition: transform 2s .25s, opacity .3s .25s ease-out, -webkit-transform 2s .25s;
+  will-change: transform, opacity;
+}
+
+.inline-photo.is-visible {
+  opacity: 1;
+  -webkit-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+}
+
+.is-visible .heading {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
