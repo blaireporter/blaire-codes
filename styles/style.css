@@ -485,12 +485,15 @@ nav li:hover:after {
   background: white;
 }
 
+nav .switch-function:hover:after {
+  background: transparent;
+}
+
 nav .navigate {
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
   font-size: 1.7rem;
   color: white;
-  border-bottom: 2px solid #171717;
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 3px;
@@ -551,6 +554,15 @@ nav .navigate {
   background-color: var(--form);
   display: none;
   z-index: 500;
+}
+
+@media (max-width: 700px) {
+  .switch-function {
+    visibility: visible;
+    margin: 0 auto;
+    margin-left: 0px;
+    margin-top: -15px;
+  }
 }
 
 .about-me-container {
@@ -799,7 +811,6 @@ nav .navigate {
 }
 
 .portfolio-container {
-  background-color: blue;
   padding: 50px 0;
   border-bottom: 25px solid;
   background-color: var(--aboutMeBg);
@@ -831,6 +842,7 @@ nav .navigate {
   max-width: 700px;
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
+  height: 100%;
 }
 
 .portfolio-container .portfolio-projects .project-image:hover,
@@ -879,17 +891,27 @@ nav .navigate {
 .portfolio-container .project-links,
 .portfolio-container span {
   font-size: 2rem;
-  border-bottom: 2px solid var(--aboutMeBg);
   margin-bottom: 20px;
   text-transform: uppercase;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-.portfolio-container .project-links:hover, .portfolio-container .project-links:focus,
-.portfolio-container span:hover,
-.portfolio-container span:focus {
-  border-bottom: 2px solid var(--form);
+.portfolio-container .project-links:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+  margin-top: 3px;
+}
+
+.portfolio-container .project-links:hover:after {
+  width: 100%;
+  background: var(--form);
 }
 
 .portfolio-container p {
@@ -898,6 +920,10 @@ nav .navigate {
 
 .portfolio-container .icons {
   margin-top: 20px;
+}
+
+.portfolio-container .fridge {
+  margin-top: -15px;
 }
 
 .portfolio-container i {
@@ -918,54 +944,49 @@ nav .navigate {
   padding: 0;
 }
 
-.switch {
-  width: 55px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+input[type=checkbox] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
 }
 
-.switch div {
-  position: relative;
-  display: block;
-  background: #eee;
-  width: 30px;
-  border-radius: 50px;
-  padding: 0 5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+label {
+  margin-top: -12px;
   cursor: pointer;
-}
-
-.fa-adjust {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-.switch input {
-  display: none;
-}
-
-.slider {
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 34px;
-  height: 12px;
-  width: 12px;
-  display: inline-block;
+  text-indent: -9999px;
+  width: 50px;
+  height: 25px;
+  background: grey;
+  display: block;
+  border-radius: 25px;
   position: relative;
 }
 
-input:checked + .slider {
-  -webkit-transform: translateX(8px);
-          transform: translateX(8px);
+label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #acabab;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 30px;
 }
 
 :root {
@@ -1047,10 +1068,6 @@ header {
 
 .dark-theme {
   --themeSwitchColor: var(--msuGreen);
-}
-
-.slider {
-  background-color: var(--themeSwitchColor);
 }
 
 /* Slideshow container */

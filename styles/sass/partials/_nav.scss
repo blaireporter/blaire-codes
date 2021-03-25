@@ -69,13 +69,16 @@ nav {
     width: 100%;
     background: white;
   }
+
+  .switch-function:hover:after{
+    background: transparent;
+  }
   
   .navigate {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     font-size: 1.7rem;
     color: white;
-    border-bottom: 2px solid #171717;
     text-transform: uppercase;
     text-decoration: none;
     padding-bottom: 3px;
@@ -132,6 +135,16 @@ nav {
   background-color: var(--form);
   display: none;
   z-index: 500;
+}
+
+.switch-function{
+  @media(max-width:700px) {
+      visibility: visible;
+      margin: 0 auto;
+      margin-left: 0px;
+      margin-top: -15px;
+    }
+
 }
 
 
