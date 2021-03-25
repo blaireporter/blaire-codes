@@ -68,7 +68,13 @@ nav {
   li:hover:after {
     width: 100%;
     background: white;
+
+    @media(max-width: 700px){
+      background: transparent;
+    }
   }
+
+
 
   .switch-function:hover:after{
     background: transparent;
@@ -116,6 +122,7 @@ nav {
   height: 0;
   overflow: hidden;
   padding: 0;
+  border: 2px solid var(--form);
 }
 
 .sub-menu li {
@@ -129,12 +136,73 @@ nav {
   height: auto;
   overflow: auto;
   top: 75px;
-  right: -120px;
+  right: -140px;
   flex-direction: column;
-  // color: var(--aboutMeBg);
-  background-color: var(--form);
+  color: var(--aboutMeBg);
+  background-color: var(--aboutMeBg);
   display: none;
   z-index: 500;
+}
+
+
+
+// ******SWITCH*******
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+  
+}
+
+label {
+  margin-top: -12px;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: var(--form);
+	display: block;
+	border-radius: 25px;
+	position: relative;
+  	background: repeating-linear-gradient(
+    to bottom,
+    #222,
+    white 1px,
+    #333 2px,
+    white 1px);
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	background: black;
+	border-radius: 15px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: var(--aboutMeBg);
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+  background: var(--form);
+  	background: repeating-linear-gradient(
+    to bottom,
+    #222,
+    white 1px,
+    #333 2px,
+    white 1px);
+}
+
+label:active:after {
+	width: 30px;
+  
 }
 
 .switch-function{

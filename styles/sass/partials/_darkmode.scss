@@ -7,88 +7,8 @@
   padding: 0;
 }
 
-// .switch {
-//   width: 55px;
-//   display: flex;
-//   // align-items: center;
-// }
-
-// .switch div {
-//   position: relative;
-//   display: block;
-//   background: #eee;
-//   width: 30px;
-//   border-radius: 50px;
-//   padding: 0 5px;
-//   box-sizing: border-box;
-//   cursor: pointer;
-// }
-
-// .fa-adjust {
-//   transform: rotate(180deg);
-// }
-
-// .switch input {
-//   display: none;
-// }
-
-// .slider {
-//   background-color: white;
-//   transition: 0.4s;
-//   border-radius: 34px;
-//   height: 15px;
-//   width: 15px;
-//   display: inline-block;
-//   position: relative;
-// }
-
-// input:checked + .slider {
-//   transform: translateX(8px);
-// }
 
 
-input[type=checkbox]{
-	height: 0;
-	width: 0;
-	visibility: hidden;
-}
-
-label {
-  margin-top: -12px;
-	cursor: pointer;
-	text-indent: -9999px;
-	width: 50px;
-	height: 25px;
-	background: grey;
-	display: block;
-	border-radius: 25px;
-	position: relative;
-}
-
-label:after {
-	content: '';
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 15px;
-	height: 15px;
-	background: #fff;
-	border-radius: 15px;
-	transition: 0.3s;
-}
-
-input:checked + label {
-	background: #acabab;
-}
-
-input:checked + label:after {
-	left: calc(100% - 5px);
-	transform: translateX(-100%);
-}
-
-label:active:after {
-	width: 30px;
-}
 
 
 :root {
