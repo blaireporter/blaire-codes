@@ -564,13 +564,13 @@ nav .navigate {
   z-index: 500;
 }
 
-input[type=checkbox] {
+header input[type=checkbox] {
   height: 0;
   width: 0;
   visibility: hidden;
 }
 
-label {
+header label {
   margin-top: -12px;
   cursor: pointer;
   text-indent: -9999px;
@@ -583,7 +583,7 @@ label {
   background: repeating-linear-gradient(to bottom, #222, white 1px, #333 2px, white 1px);
 }
 
-label:after {
+header label:after {
   content: '';
   position: absolute;
   top: 5px;
@@ -596,11 +596,11 @@ label:after {
   transition: 0.3s;
 }
 
-input:checked + label {
+header input:checked + label {
   background: var(--aboutMeBg);
 }
 
-input:checked + label:after {
+header input:checked + label:after {
   left: calc(100% - 5px);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -608,7 +608,7 @@ input:checked + label:after {
   background: repeating-linear-gradient(to bottom, #222, white 1px, #333 2px, white 1px);
 }
 
-label:active:after {
+header label:active:after {
   width: 30px;
 }
 
@@ -634,7 +634,7 @@ label:active:after {
 .about-me-content {
   width: 50%;
   color: white;
-  margin: 200px 0 20px 200px;
+  margin: 100px 0 20px 200px;
   overflow: auto;
 }
 
@@ -978,8 +978,12 @@ label:active:after {
   margin-top: 20px;
 }
 
+.portfolio-container .created {
+  text-transform: uppercase;
+}
+
 .portfolio-container .fridge {
-  margin-top: -15px;
+  margin-top: -5px;
 }
 
 .portfolio-container i {

@@ -147,6 +147,8 @@ nav {
 
 
 // ******SWITCH*******
+
+header {
 input[type=checkbox]{
 	height: 0;
 	width: 0;
@@ -203,6 +205,7 @@ input:checked + label:after {
 label:active:after {
 	width: 30px;
   
+}
 }
 
 .switch-function{
