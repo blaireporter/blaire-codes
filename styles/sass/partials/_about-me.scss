@@ -2,19 +2,33 @@
 
 }
 
-.about-me-container {
+main{
     border-color: var(--aboutMeBg);
     border-top: 25px solid;
     border-bottom: 25px solid;
+}
+
+.about-me-container {
     background-color: var(--aboutMeBg);
     display: flex;
+
+    @media(max-width: 1100px){
+           flex-direction: column-reverse;
+       }
 }
 
 .about-me-content {
-    width: 50%;
+    // width: 50%;
     color: white;
-    margin: 100px 0 20px 200px;
+    margin: 100px 0;
+    margin-right: 30px;
+    max-width: 600px;
     overflow: auto;
+
+    @media(max-width: 1100px){
+        // width: 100%;
+        margin: 0 auto;
+    }
 
     h2, h3 {
         font-family: 'Oswald', sans-serif;
@@ -26,7 +40,23 @@
     }
     h3 {
         margin-top: 30px;
-        font-size: 5rem;
+        font-size: calc(3rem + 1vw);
+    }
+
+    @media(max-width: 1260px){
+        h3{
+            font-size: 4rem;
+            margin-top: 10px;;
+        }
+
+        @media(max-width: 750px){
+            font-size: 3rem;
+            max-width: 500px;
+        }
+         @media(max-width: 550px){
+            font-size: 2.5rem;
+            max-width: 400px;
+        }
     }
 
     p{
@@ -35,6 +65,23 @@
         max-width: 700px;
         font-family: 'Oswald', sans-serif;
         line-height: 25px;
+    }
+
+      @media(max-width: 1260px){
+        p{
+            font-size: calc(3rem - 1vw);
+            max-width: 800px;
+            line-height: 20px;;
+            margin-top: 20px;
+        }
+
+          @media(max-width: 750px){
+              p{
+                  font-size: calc(2.5rem - 1vw);
+                  line-height: 30px;
+                  max-width: 500px;
+                }
+        }
     }
 
     img{
@@ -52,7 +99,11 @@
         background-color: transparent;
         margin-bottom: 100px;
     }
-
+  @media(max-width: 1260px){
+        .resume-button{
+            margin-top: 10px;
+        }
+    }
       
     .resume-button:after {
     content: '';
@@ -63,6 +114,8 @@
     background: transparent;
     transition: width .5s ease, background-color .5s ease;
   }
+
+  
   
   .resume-button:hover:after {
     width: 100%;
@@ -71,10 +124,15 @@
 }
 
 .about-me-images {
-    max-width: 500px;
-    width: 50%;
+        margin: 100px 0;
+
     position: relative;
-    margin: 100px 200px;
+
+    @media(max-width: 1100px){
+           margin: 0 auto;
+           margin-top: 100px;
+           margin-bottom: 50px;
+       }
 }
 
 .drawing {

@@ -618,21 +618,40 @@ header label:active:after {
   }
 }
 
-.about-me-container {
+main {
   border-color: var(--aboutMeBg);
   border-top: 25px solid;
   border-bottom: 25px solid;
+}
+
+.about-me-container {
   background-color: var(--aboutMeBg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+@media (max-width: 1100px) {
+  .about-me-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 .about-me-content {
-  width: 50%;
   color: white;
-  margin: 100px 0 20px 200px;
+  margin: 100px 0;
+  margin-right: 30px;
+  max-width: 600px;
   overflow: auto;
+}
+
+@media (max-width: 1100px) {
+  .about-me-content {
+    margin: 0 auto;
+  }
 }
 
 .about-me-content h2, .about-me-content h3 {
@@ -646,7 +665,28 @@ header label:active:after {
 
 .about-me-content h3 {
   margin-top: 30px;
-  font-size: 5rem;
+  font-size: calc(3rem + 1vw);
+}
+
+@media (max-width: 1260px) {
+  .about-me-content h3 {
+    font-size: 4rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1260px) and (max-width: 750px) {
+  .about-me-content {
+    font-size: 3rem;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 1260px) and (max-width: 550px) {
+  .about-me-content {
+    font-size: 2.5rem;
+    max-width: 400px;
+  }
 }
 
 .about-me-content p {
@@ -655,6 +695,23 @@ header label:active:after {
   max-width: 700px;
   font-family: 'Oswald', sans-serif;
   line-height: 25px;
+}
+
+@media (max-width: 1260px) {
+  .about-me-content p {
+    font-size: calc(3rem - 1vw);
+    max-width: 800px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1260px) and (max-width: 750px) {
+  .about-me-content p {
+    font-size: calc(2.5rem - 1vw);
+    line-height: 30px;
+    max-width: 500px;
+  }
 }
 
 .about-me-content img {
@@ -671,6 +728,12 @@ header label:active:after {
   font-size: 2rem;
   background-color: transparent;
   margin-bottom: 100px;
+}
+
+@media (max-width: 1260px) {
+  .about-me-content .resume-button {
+    margin-top: 10px;
+  }
 }
 
 .about-me-content .resume-button:after {
@@ -690,10 +753,16 @@ header label:active:after {
 }
 
 .about-me-images {
-  max-width: 500px;
-  width: 50%;
+  margin: 100px 0;
   position: relative;
-  margin: 100px 200px;
+}
+
+@media (max-width: 1100px) {
+  .about-me-images {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
 }
 
 .drawing {
@@ -1045,7 +1114,6 @@ header label:active:after {
   --themeDropDownBg: var(--goldCrayola);
   --themeIconBorderColor: var(--blackTheme);
   --navBg: var(--blackTheme);
-  --mainBg: var(--goldCrayola);
   --fontColor: var(--black);
   --backgroundImg: var(--Lgt);
   --aboutMeBg: var(--whiteTheme);
@@ -1059,7 +1127,6 @@ header label:active:after {
   --themeDropDownBg: var(--msuGreen);
   --themeIconBorderColor: var(--richBlackForeground);
   --navBg: var(--richBlackForeground);
-  --mainBg: var(--msuGreen);
   --fontColor: var(--white);
   --backgroundImg: var(--Drk);
   --aboutMeBg: var(--blackTheme);
