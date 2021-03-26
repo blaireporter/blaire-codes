@@ -6,12 +6,15 @@
     h4 {
         color: var(--fontColor);
         margin-top: 20px;
-        margin-bottom: 0;
         font-family: 'Oswald', sans-serif;
         text-transform: uppercase;
         text-align: center;
         font-size: 5rem;
         margin-bottom: 20px;
+
+        @media(max-width: 750px){
+            margin-bottom: 5px;
+        }
     }
     
     .portfolio-projects{
@@ -38,6 +41,7 @@
 
          @media(max-width: 750px){
             padding: 0 50px;
+            animation: fadeInProject 5s infinite alternate;
         }
 
         @media(max-width: 500px){
@@ -172,6 +176,10 @@
     i:first-child{
         padding: 0;
     }
+}
+
+@keyframes fadeInProject { 
+  from { filter: grayscale(0%) } 
 }
 
 

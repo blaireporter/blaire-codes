@@ -743,6 +743,20 @@ main {
   .drawing {
     max-width: 300px;
     width: 300px;
+    -webkit-animation: fadeInPhoto 6s infinite alternate;
+            animation: fadeInPhoto 6s infinite alternate;
+  }
+}
+
+@-webkit-keyframes fadeInPhoto {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInPhoto {
+  from {
+    opacity: 0;
   }
 }
 
@@ -1185,12 +1199,17 @@ main {
 .portfolio-container h4 {
   color: var(--fontColor);
   margin-top: 20px;
-  margin-bottom: 0;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 5rem;
   margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+  .portfolio-container h4 {
+    margin-bottom: 5px;
+  }
 }
 
 .portfolio-container .portfolio-projects {
@@ -1229,6 +1248,8 @@ main {
 @media (max-width: 750px) {
   .portfolio-container .portfolio-projects .project-image {
     padding: 0 50px;
+    -webkit-animation: fadeInProject 5s infinite alternate;
+            animation: fadeInProject 5s infinite alternate;
   }
 }
 
@@ -1400,6 +1421,20 @@ main {
 
 .portfolio-container i:first-child {
   padding: 0;
+}
+
+@-webkit-keyframes fadeInProject {
+  from {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
+}
+
+@keyframes fadeInProject {
+  from {
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+  }
 }
 
 * {
