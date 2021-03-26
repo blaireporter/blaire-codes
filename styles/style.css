@@ -1289,6 +1289,12 @@ form {
   color: var(--aboutMeBg);
 }
 
+@media (max-width: 750px) {
+  .contact-me {
+    font-size: 4rem;
+  }
+}
+
 /* reset */
 #fs-frm select,
 #fs-frm textarea,
@@ -1306,6 +1312,16 @@ form {
   -moz-appearance: none;
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
+}
+
+@media (max-width: 750px) {
+  #fs-frm select,
+  #fs-frm textarea,
+  #fs-frm fieldset,
+  #fs-frm optgroup,
+  #fs-frm label {
+    font-size: 1.5rem;
+  }
 }
 
 /* border, padding, margin, width */
@@ -1327,6 +1343,14 @@ form {
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
   resize: none;
+}
+
+@media (max-width: 750px) {
+  #fs-frm [type="text"],
+  #fs-frm [type="email"],
+  #fs-frm textarea {
+    font-size: 1.5rem;
+  }
 }
 
 #fs-frm textarea {
@@ -1367,12 +1391,28 @@ form {
   margin: 0 auto;
 }
 
+@media (max-width: 750px) {
+  .contact-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 0 25px;
+  }
+}
+
 .contact-info-container p {
   margin-top: 20px;
   font-size: 2rem;
   margin-bottom: 20px;
   color: var(--aboutMeBg);
   line-height: 30px;
+}
+
+@media (max-width: 750px) {
+  .contact-info-container p {
+    font-size: 1.5rem;
+  }
 }
 
 .contact-info-container i {
@@ -1385,6 +1425,12 @@ form {
   margin-right: 50px;
   color: var(--aboutMeBg);
   max-width: 300px;
+}
+
+@media (max-width: 750px) {
+  .contact-info-container {
+    margin: 0 auto;
+  }
 }
 
 fieldset label {
