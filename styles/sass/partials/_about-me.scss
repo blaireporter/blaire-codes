@@ -98,11 +98,11 @@ main{
         font-size: 2rem;
         background-color: transparent;
         margin-bottom: 100px;
-    }
-  @media(max-width: 1260px){
-        .resume-button{
+
+        @media(max-width: 1260px){
             margin-top: 10px;
-        }
+              
+          }
     }
       
     .resume-button:after {
@@ -129,17 +129,17 @@ main{
     position: relative;
 
     @media(max-width: 1100px){
-           margin: 0 auto;
-           margin-top: 100px;
-           margin-bottom: 50px;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
        }
 
-        @media(max-width: 750px){
-           margin: 0 auto;
-           margin-top: 100px;
-           margin-bottom: 50px;
-           max-width: 300px;
-       }
+    @media(max-width: 750px){
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        max-width: 300px;
+    }
 }
 
 .drawing {
