@@ -3,9 +3,12 @@
 }
 
 main{
+    background-color: var(--aboutMeBg);
     border-color: var(--aboutMeBg);
     border-top: 25px solid;
     border-bottom: 25px solid;
+    border-left: none;
+    border-right: none;
 }
 
 .about-me-container {

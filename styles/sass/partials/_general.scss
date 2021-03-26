@@ -10,6 +10,10 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 100vh;
+
+    @media(max-width:750px){
+        min-height: 60vh;
+    }
 }
 
 .header-container {
@@ -17,9 +21,13 @@ body {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
-    margin-top: 16%;
+    margin-top: 20%;
     border: 20px solid;
     border-color: var(--form);
+
+    @media(max-width: 750px){
+        max-width: 300px;
+    }
 
     .header-icon{
         font-size: 5rem;

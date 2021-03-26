@@ -308,14 +308,26 @@ header {
   min-height: 100vh;
 }
 
+@media (max-width: 750px) {
+  header {
+    min-height: 60vh;
+  }
+}
+
 .header-container {
   background-color: var(--aboutMeBg);
   max-width: 500px;
   width: 100%;
   margin: 0 auto;
-  margin-top: 16%;
+  margin-top: 20%;
   border: 20px solid;
   border-color: var(--form);
+}
+
+@media (max-width: 750px) {
+  .header-container {
+    max-width: 300px;
+  }
 }
 
 .header-container .header-icon {
@@ -538,9 +550,12 @@ header label:active:after {
 }
 
 main {
+  background-color: var(--aboutMeBg);
   border-color: var(--aboutMeBg);
   border-top: 25px solid;
   border-bottom: 25px solid;
+  border-left: none;
+  border-right: none;
 }
 
 .about-me-container {
@@ -1195,10 +1210,6 @@ nav {
 
 nav ul li:hover {
   background-color: var(--navLinkHoverBg);
-}
-
-main {
-  background: var(--mainBg);
 }
 
 header {
