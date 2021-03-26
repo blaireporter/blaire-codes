@@ -1,18 +1,3 @@
-const hamburgerMenu = document.querySelector(".hamburger-menu");
-
-hamburgerMenu.addEventListener("click", function (event) {
-    event.preventDefault();
-    if (subMenu.style.display === "block") {
-        subMenu.style.display = "none";
-    } else {
-        subMenu.style.display = "block";
-    }
-});
-
-
-const subMenu = document.querySelector(".sub-menu");
-
-// *******HAMBURBER MENU END*********
 
 const themeSwitch = document.querySelector('input');
 
@@ -30,9 +15,9 @@ form.reset();
 
 // ******show on scroll*****
 // Detect request animation frame
-var scroll = window.requestAnimationFrame ||
+const scroll = window.requestAnimationFrame ||
     function (callback) { window.setTimeout(callback, 1000 / 60) };
-var elementsToShow = document.querySelectorAll('.show-on-scroll');
+const elementsToShow = document.querySelectorAll('.show-on-scroll');
 
 function loop() {
 
@@ -52,7 +37,7 @@ loop();
 
 // Helper function from: http://stackoverflow.com/a/7557433/274826
 function isElementInViewport(el) {
-    var rect = el.getBoundingClientRect();
+    const rect = el.getBoundingClientRect();
     return (
         (rect.top <= 0
             && rect.bottom >= 0)
