@@ -43,7 +43,7 @@
 .dark-theme {
   --themeDropDownBg: var(--msuGreen);
   --themeIconBorderColor: var(--richBlackForeground);
-  --navBg: var(--richBlackForeground);
+  --navBg: var(--blackTheme);
 //   --navLinkHoverBg: var(--msuGreen);
   --fontColor: var(--white);
   --backgroundImg: var(--Drk);
@@ -59,9 +59,9 @@
   color: var(--fontColor);
 }
 
-nav {
-  background: var(--navBg);
-}
+// nav {
+//   background: var(--navBg);
+// }
 
 nav ul li:hover {
   background-color: var(--navLinkHoverBg);
@@ -84,7 +84,7 @@ nav ul li:hover {
 }
 
 .dark-theme {
-  --themeSwitchColor: var(--msuGreen);
+  --themeSwitchColor: var(--whiteTheme);
 }
 
 // .slider {
