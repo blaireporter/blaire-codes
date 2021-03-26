@@ -58,7 +58,6 @@
             
             
             .icon {
-                color: #171717;
                 font-size: 80px;
                 width: 80px;
                 color: var(--fontColor);
@@ -72,8 +71,12 @@
                 @media(max-width: 750px){
                     font-size: 45px;
                     width: 40px;
+                    animation: fadeIn 5s infinite alternate;
                 }
                 
+                @keyframes fadeIn { 
+                    from { filter: brightness(100%)} 
+                }
         
         
                &:hover,
@@ -82,11 +85,23 @@
                } 
             }
 
+            .fa-js-square{
+                animation: jsColorIn 5s infinite alternate;
+            }
+             @keyframes jsColorIn { 
+                    from { color: #F9E000} 
+                }
             .fa-js-square:hover,
             .fa-js-square:focus {
                 color: #F9E000;
             }
 
+            .fa-sass{
+                animation: sassColorIn 5s infinite alternate;
+            }
+            @keyframes sassColorIn { 
+                    from { color: #C03E82} 
+                }
             .fa-sass:hover,
             .fa-sass:focus{
                 color: #C03E82;

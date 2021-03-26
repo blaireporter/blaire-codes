@@ -14,7 +14,6 @@ form.reset();
 
 
 // ******show on scroll*****
-// Detect request animation frame
 const scroll = window.requestAnimationFrame ||
     function (callback) { window.setTimeout(callback, 1000 / 60) };
 const elementsToShow = document.querySelectorAll('.show-on-scroll');

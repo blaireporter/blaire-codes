@@ -831,7 +831,6 @@ main {
 }
 
 .skills-icons ul li .icon {
-  color: #171717;
   font-size: 80px;
   width: 80px;
   color: var(--fontColor);
@@ -850,6 +849,22 @@ main {
   .skills-icons ul li .icon {
     font-size: 45px;
     width: 40px;
+    -webkit-animation: fadeIn 5s infinite alternate;
+            animation: fadeIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
 }
 
@@ -858,9 +873,43 @@ main {
           filter: brightness(100%);
 }
 
+.skills-icons ul li .fa-js-square {
+  -webkit-animation: jsColorIn 5s infinite alternate;
+          animation: jsColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes jsColorIn {
+  from {
+    color: #F9E000;
+  }
+}
+
+@keyframes jsColorIn {
+  from {
+    color: #F9E000;
+  }
+}
+
 .skills-icons ul li .fa-js-square:hover,
 .skills-icons ul li .fa-js-square:focus {
   color: #F9E000;
+}
+
+.skills-icons ul li .fa-sass {
+  -webkit-animation: sassColorIn 5s infinite alternate;
+          animation: sassColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes sassColorIn {
+  from {
+    color: #C03E82;
+  }
+}
+
+@keyframes sassColorIn {
+  from {
+    color: #C03E82;
+  }
 }
 
 .skills-icons ul li .fa-sass:hover,
