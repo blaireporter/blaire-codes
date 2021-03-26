@@ -15,6 +15,12 @@
   }
 }
 
+.full-screen-nav{
+   @media(max-width:700px) {
+    display:none;
+  }
+}
+
 nav {
   
   
@@ -187,7 +193,7 @@ label:after {
 }
 
 input:checked + label {
-	background: var(--aboutMeBg);
+	background: var(--form);
 }
 
 input:checked + label:after {

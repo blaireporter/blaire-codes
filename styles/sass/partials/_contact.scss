@@ -11,6 +11,8 @@
 h4{
     text-align: center;
     font-size: 5rem;
+    text-transform: uppercase;
+    margin: 40px 0;
 
 }
 
@@ -18,11 +20,11 @@ h4{
 form{
     margin: 0 auto;
     padding: 50px;
-    width: 700px;
+    max-width: 500px;
+    width: 100%;
     background-color: var(--form);
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-
 }
 
 .contact-me{
@@ -45,6 +47,8 @@ form{
             margin: 0;
             -webkit-appearance: none;
             -moz-appearance: none;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
         }
     
         /* border, padding, margin, width */
@@ -52,10 +56,10 @@ form{
         #fs-frm textarea {
             border: 1px solid rgba(0, 0, 0, 0.2);
             background-color: rgba(255, 255, 255, 0.9);
-            padding: .75em 1rem;
+            padding: 5px 10px;
             margin-bottom: 1.5rem;
+            margin-top: 15px;
         }
-    
     
         #fs-frm [type="text"],
         #fs-frm [type="email"],
@@ -63,19 +67,69 @@ form{
             width: 100%;
             background-color: var(--aboutMeBg);
             color: var(--form);
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            resize: none;
+        }
+
+        #fs-frm textarea{
+            max-height: 100px;
+            overflow: auto;
         }
     
         #fs-frm [type="button"],
         #fs-frm [type="submit"] {
-            color: black;
+            background-color: var(--form);
+            border: 2px solid var(--form);
+            color: var(--aboutMeBg);
             width: auto;
             cursor: pointer;
-            -webkit-appearance: button;
-            -moz-appearance: button;
-            appearance: button;
+            font-family: 'Oswald', sans-serif;
+            font-size: 2rem;
+            text-transform: uppercase;
+            padding: none;
         }
-    
-        #fs-frm [type="submit"] {
-            margin-bottom: 0;
+
+        #fs-frm [type="button"]:hover,
+        #fs-frm [type="submit"]:hover,
+        #fs-frm [type="button"]:focus,
+        #fs-frm [type="submit"]:focus{
+            border: 2px solid var(--aboutMeBg);
+            transition: 0.5s ease-in-out;
+            background-color: var(--aboutMeBg);
+            color: var(--form);
+        }
+
+
+
+        .contact-container{
+            display: flex;
+            background-color: var(--form);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-info-container p{
+            margin-top: 20px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--aboutMeBg);
+            line-height: 30px;
+        }
+
+        .contact-info-container i{
+            font-size: 4rem;
+            padding: 15px;
+            color: var(--aboutMeBg);
+        }
+
+        .contact-info-container {
+            margin-right: 50px;
+            color: var(--aboutMeBg);
+            max-width: 300px;
+        }
+
+        fieldset label{
+            font-size: 2rem;
         }
 

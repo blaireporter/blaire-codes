@@ -330,27 +330,6 @@ header {
           filter: var(--logo);
 }
 
-.resume-container {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.resume-container button {
-  font-size: 1.5rem;
-  font-family: 'Oswald', sans-serif;
-  padding: 5px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 25px;
-  background-color: var(--aboutMeBg);
-  text-transform: uppercase;
-  border: 2px solid var(--form);
-}
-
-.resume-container button:hover, .resume-container button:focus {
-  border: 2px solid yellow;
-}
-
 .icon {
   color: #171717;
   font-size: 80px;
@@ -415,6 +394,18 @@ header {
           filter: var(--filtered);
 }
 
+.fa-linkedin:hover {
+  color: #0080CC;
+}
+
+.fa-calendar-check:hover {
+  color: #37BF91;
+}
+
+.fa-twitter-square:hover {
+  color: #1DA1F2;
+}
+
 .logo {
   height: 40px;
   margin: 0 auto;
@@ -428,6 +419,12 @@ header {
 .logo-link a:hover,
 .logo-link a:focus {
   border-bottom: none;
+}
+
+@media (max-width: 700px) {
+  .full-screen-nav {
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {
@@ -597,7 +594,7 @@ header label:after {
 }
 
 header input:checked + label {
-  background: var(--aboutMeBg);
+  background: var(--form);
 }
 
 header input:checked + label:after {
@@ -644,7 +641,7 @@ header label:active:after {
 }
 
 .about-me-content h2 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .about-me-content h3 {
@@ -657,6 +654,7 @@ header label:active:after {
   font-size: 2rem;
   max-width: 700px;
   font-family: 'Oswald', sans-serif;
+  line-height: 25px;
 }
 
 .about-me-content img {
@@ -664,6 +662,31 @@ header label:active:after {
   position: absolute;
   left: 0%;
   overflow: auto;
+}
+
+.about-me-content .resume-button {
+  border: none;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 30px;
+  font-size: 2rem;
+  background-color: transparent;
+  margin-bottom: 100px;
+}
+
+.about-me-content .resume-button:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  -webkit-transition: width .5s ease, background-color .5s ease;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.about-me-content .resume-button:hover:after {
+  width: 100%;
+  background: var(--form);
 }
 
 .about-me-images {
@@ -995,10 +1018,6 @@ header label:active:after {
   padding: 0;
 }
 
-:root {
-  --navHeight: 70px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -1220,12 +1239,15 @@ header {
 h4 {
   text-align: center;
   font-size: 5rem;
+  text-transform: uppercase;
+  margin: 40px 0;
 }
 
 form {
   margin: 0 auto;
   padding: 50px;
-  width: 700px;
+  max-width: 500px;
+  width: 100%;
   background-color: var(--form);
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -1250,6 +1272,8 @@ form {
   margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
 }
 
 /* border, padding, margin, width */
@@ -1257,8 +1281,9 @@ form {
 #fs-frm textarea {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
-  padding: .75em 1rem;
+  padding: 5px 10px;
   margin-bottom: 1.5rem;
+  margin-top: 15px;
 }
 
 #fs-frm [type="text"],
@@ -1267,20 +1292,71 @@ form {
   width: 100%;
   background-color: var(--aboutMeBg);
   color: var(--form);
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  resize: none;
+}
+
+#fs-frm textarea {
+  max-height: 100px;
+  overflow: auto;
 }
 
 #fs-frm [type="button"],
 #fs-frm [type="submit"] {
-  color: black;
+  background-color: var(--form);
+  border: 2px solid var(--form);
+  color: var(--aboutMeBg);
   width: auto;
   cursor: pointer;
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: none;
 }
 
-#fs-frm [type="submit"] {
-  margin-bottom: 0;
+#fs-frm [type="button"]:hover,
+#fs-frm [type="submit"]:hover,
+#fs-frm [type="button"]:focus,
+#fs-frm [type="submit"]:focus {
+  border: 2px solid var(--aboutMeBg);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-color: var(--aboutMeBg);
+  color: var(--form);
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--form);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-info-container p {
+  margin-top: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--aboutMeBg);
+  line-height: 30px;
+}
+
+.contact-info-container i {
+  font-size: 4rem;
+  padding: 15px;
+  color: var(--aboutMeBg);
+}
+
+.contact-info-container {
+  margin-right: 50px;
+  color: var(--aboutMeBg);
+  max-width: 300px;
+}
+
+fieldset label {
+  font-size: 2rem;
 }
 
 footer {
