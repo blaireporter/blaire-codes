@@ -873,9 +873,11 @@ main {
           filter: brightness(100%);
 }
 
-.skills-icons ul li .fa-js-square {
-  -webkit-animation: jsColorIn 5s infinite alternate;
-          animation: jsColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-js-square {
+    -webkit-animation: jsColorIn 5s infinite alternate;
+            animation: jsColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes jsColorIn {
@@ -895,9 +897,11 @@ main {
   color: #F9E000;
 }
 
-.skills-icons ul li .fa-sass {
-  -webkit-animation: sassColorIn 5s infinite alternate;
-          animation: sassColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-sass {
+    -webkit-animation: sassColorIn 5s infinite alternate;
+            animation: sassColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes sassColorIn {
@@ -917,9 +921,11 @@ main {
   color: #C03E82;
 }
 
-.skills-icons ul li .fa-html5 {
-  -webkit-animation: htmlColorIn 5s infinite alternate;
-          animation: htmlColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-html5 {
+    -webkit-animation: htmlColorIn 5s infinite alternate;
+            animation: htmlColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes htmlColorIn {
@@ -939,9 +945,11 @@ main {
   color: #E98348;
 }
 
-.skills-icons ul li .fa-css3-alt {
-  -webkit-animation: cssColorIn 5s infinite alternate;
-          animation: cssColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-css3-alt {
+    -webkit-animation: cssColorIn 5s infinite alternate;
+            animation: cssColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes cssColorIn {
@@ -961,9 +969,11 @@ main {
   color: #62ABF5;
 }
 
-.skills-icons ul li .fa-react {
-  -webkit-animation: reactColorIn 5s infinite alternate;
-          animation: reactColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-react {
+    -webkit-animation: reactColorIn 5s infinite alternate;
+            animation: reactColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes reactColorIn {
@@ -983,9 +993,11 @@ main {
   color: #64D8FD;
 }
 
-.skills-icons ul li .fa-github {
-  -webkit-animation: githubColorIn 5s infinite alternate;
-          animation: githubColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-github {
+    -webkit-animation: githubColorIn 5s infinite alternate;
+            animation: githubColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes githubColorIn {
@@ -1005,9 +1017,11 @@ main {
   color: #333232;
 }
 
-.skills-icons ul li .fa-git-alt {
-  -webkit-animation: gitColorIn 5s infinite alternate;
-          animation: gitColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-git-alt {
+    -webkit-animation: gitColorIn 5s infinite alternate;
+            animation: gitColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes gitColorIn {
@@ -1027,9 +1041,11 @@ main {
   color: #EE4C33;
 }
 
-.skills-icons ul li .fa-terminal {
-  -webkit-animation: clColorIn 5s infinite alternate;
-          animation: clColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-terminal {
+    -webkit-animation: clColorIn 5s infinite alternate;
+            animation: clColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes clColorIn {
@@ -1049,9 +1065,11 @@ main {
   color: #1ED215;
 }
 
-.skills-icons ul li .fa-universal-access {
-  -webkit-animation: accessColorIn 5s infinite alternate;
-          animation: accessColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-universal-access {
+    -webkit-animation: accessColorIn 5s infinite alternate;
+            animation: accessColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes accessColorIn {
@@ -1071,9 +1089,11 @@ main {
   color: #155196;
 }
 
-.skills-icons ul li .fa-mobile-alt {
-  -webkit-animation: resColorIn 5s infinite alternate;
-          animation: resColorIn 5s infinite alternate;
+@media (max-width: 750px) {
+  .skills-icons ul li .fa-mobile-alt {
+    -webkit-animation: resColorIn 5s infinite alternate;
+            animation: resColorIn 5s infinite alternate;
+  }
 }
 
 @-webkit-keyframes resColorIn {

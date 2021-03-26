@@ -86,18 +86,22 @@
             }
 
             .fa-js-square{
-                animation: jsColorIn 5s infinite alternate;
-            }
-             @keyframes jsColorIn { 
-                    from { color: #F9E000} 
+                @media(max-width: 750px){
+                    animation: jsColorIn 5s infinite alternate;
                 }
+            }
+            @keyframes jsColorIn { 
+                from { color: #F9E000} 
+            }
             .fa-js-square:hover,
             .fa-js-square:focus {
                 color: #F9E000;
             }
 
             .fa-sass{
-                animation: sassColorIn 5s infinite alternate;
+                @media(max-width: 750px){
+                    animation: sassColorIn 5s infinite alternate;
+                }
             }
             @keyframes sassColorIn { 
                     from { color: #C03E82} 
@@ -108,7 +112,9 @@
             }
 
               .fa-html5{
-                animation: htmlColorIn 5s infinite alternate;
+                  @media(max-width: 750px){
+                      animation: htmlColorIn 5s infinite alternate;
+                }
             }
             @keyframes htmlColorIn { 
                     from { color: #E98348} 
@@ -120,7 +126,9 @@
             }
             // ******CSS ICON*****
              .fa-css3-alt{
-                animation: cssColorIn 5s infinite alternate;
+                 @media(max-width: 750px){
+                     animation: cssColorIn 5s infinite alternate;
+                }
             }
             @keyframes cssColorIn { 
                     from { color: #62ABF5} 
@@ -132,7 +140,9 @@
 
             // *****REACT ICON***** 
             .fa-react{
-                animation: reactColorIn 5s infinite alternate;
+                @media(max-width: 750px){
+                    animation: reactColorIn 5s infinite alternate;
+                }
             }
             @keyframes reactColorIn { 
                     from { color: #64D8FD} 
@@ -144,7 +154,9 @@
             }
             // *****GITHUB ICON*****
               .fa-github{
-                animation: githubColorIn 5s infinite alternate;
+                  @media(max-width: 750px){
+                      animation: githubColorIn 5s infinite alternate;
+                }
             }
             @keyframes githubColorIn { 
                     from { color: #333232} 
@@ -156,7 +168,9 @@
             }
             // *****GIT ICON*****
               .fa-git-alt{
-                animation: gitColorIn 5s infinite alternate;
+                  @media(max-width: 750px){
+                     animation: gitColorIn 5s infinite alternate;
+                }
             }
             @keyframes gitColorIn { 
                     from { color: #EE4C33} 
@@ -169,7 +183,9 @@
 
             // *****COMMAND LINE ICON*****
                .fa-terminal{
-                animation: clColorIn 5s infinite alternate;
+                   @media(max-width: 750px){
+                       animation: clColorIn 5s infinite alternate;
+                }
             }
             @keyframes clColorIn { 
                     from { color: #1ED215} 
@@ -182,7 +198,9 @@
 
             // *****ACCESSIBLITY ICON*****
             .fa-universal-access{
-                animation: accessColorIn 5s infinite alternate;
+                @media(max-width: 750px){
+                    animation: accessColorIn 5s infinite alternate;
+                }
             }
             @keyframes accessColorIn { 
                     from { color: #155196} 
@@ -196,7 +214,9 @@
 
             // *****RESPONSIVE ICON*****
               .fa-mobile-alt{
-                animation: resColorIn 5s infinite alternate;
+                  @media(max-width: 750px){
+                      animation: resColorIn 5s infinite alternate;
+                }
             }
             @keyframes resColorIn { 
                     from { color: #8641BE} 
