@@ -15,6 +15,11 @@
     border-color: var(--aboutMeBg);
     border: 20px solid;
     background-color: var(--aboutMeBg);
+
+    @media(max-width: 1000px){
+        margin: 0 auto;
+        margin: 0 50px;
+    }
     
     
     h4 {
@@ -38,6 +43,10 @@
             margin: 0 auto;
             font-size: 2rem;
             padding: 40px;
+
+            @media(max-width: 1000px){
+                padding: 25px;
+            }
             
             
             .icon {
@@ -46,6 +55,11 @@
                 width: 80px;
                 color: var(--fontColor);
                 transition: 0.4s ease-in-out;
+
+                @media(max-width: 1000px){
+                    font-size: 65px;
+                    width: 50px;
+                }
                 
         
         
@@ -111,6 +125,10 @@
             }
             .firebase{
                 width: 70px;
+
+                @media(max-width: 1000px){
+                    width: 50px;
+                }
             }
         }
     }
@@ -125,6 +143,10 @@
     margin-top: 15px;
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
+
+    @media(max-width: 1000px){
+        font-size: 1.5rem;
+    }
 
 }
 
