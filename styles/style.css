@@ -543,10 +543,8 @@ header label:active:after {
 
 @media (max-width: 700px) {
   .switch-function {
-    visibility: visible;
-    margin: 0 auto;
-    margin-left: 0px;
-    margin-top: -15px;
+    position: absolute;
+    right: 0%;
   }
 }
 

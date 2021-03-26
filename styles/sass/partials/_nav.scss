@@ -217,10 +217,8 @@ label:active:after {
 
 .switch-function{
   @media(max-width:700px) {
-      visibility: visible;
-      margin: 0 auto;
-      margin-left: 0px;
-      margin-top: -15px;
+      position: absolute;
+      right: 0%;
     }
 
 }
