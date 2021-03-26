@@ -1460,6 +1460,12 @@ footer p {
   margin: 0 auto;
 }
 
+@media (max-width: 750px) {
+  footer p {
+    font-size: 1rem;
+  }
+}
+
 .inline-photo {
   opacity: 0;
   -webkit-transform: rotateZ(-8deg);
