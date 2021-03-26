@@ -30,6 +30,10 @@
         text-transform: uppercase;
         text-align: center;
         font-size: 5rem;
+
+        @media(max-width: 750px){
+                font-size: 4rem;
+            }
     }
     
     ul {
@@ -47,6 +51,10 @@
             @media(max-width: 1000px){
                 padding: 25px;
             }
+
+            @media(max-width: 750px){
+                padding: 15px;
+            }
             
             
             .icon {
@@ -59,6 +67,11 @@
                 @media(max-width: 1000px){
                     font-size: 65px;
                     width: 50px;
+                }
+
+                @media(max-width: 750px){
+                    font-size: 45px;
+                    width: 40px;
                 }
                 
         
@@ -128,6 +141,10 @@
 
                 @media(max-width: 1000px){
                     width: 50px;
+                }
+
+                @media(max-width: 750px){
+                    width: 40px;
                 }
             }
         }

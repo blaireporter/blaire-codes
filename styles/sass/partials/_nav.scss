@@ -23,11 +23,6 @@
 
 nav {
   
-  
-  i {
-
-  }
-  
   ul {
     display: flex;
     justify-content: flex-end;
@@ -49,8 +44,6 @@ nav {
       margin-right: 5px;
     }
     @media(max-width: 500px){
-      // padding: 5px;
-      // margin-right: 5px;
     }
     
   }
@@ -98,7 +91,7 @@ nav {
   }
 
     @media(max-width:500px) {
-    font-size: calc(1.5rem - 1vw);
+    font-size: calc(1.3rem - 1vw);
   }
   }
   
@@ -194,7 +187,7 @@ label:after {
 }
 
 input:checked + label {
-	background: var(--form);
+	background: var(--aboutMeBg);
 }
 
 input:checked + label:after {

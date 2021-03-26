@@ -297,6 +297,14 @@ img {
   max-width: 100%;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 body {
   font-family: 'Oswald', sans-serif;
 }
@@ -489,7 +497,7 @@ nav .navigate {
 
 @media (max-width: 500px) {
   nav .navigate {
-    font-size: calc(1.5rem - 1vw);
+    font-size: calc(1.3rem - 1vw);
   }
 }
 
@@ -526,7 +534,7 @@ header label:after {
 }
 
 header input:checked + label {
-  background: var(--form);
+  background: var(--aboutMeBg);
 }
 
 header input:checked + label:after {
@@ -774,6 +782,12 @@ main {
   font-size: 5rem;
 }
 
+@media (max-width: 750px) {
+  .skills-icons h4 {
+    font-size: 4rem;
+  }
+}
+
 .skills-icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -796,6 +810,12 @@ main {
   }
 }
 
+@media (max-width: 750px) {
+  .skills-icons ul li {
+    padding: 15px;
+  }
+}
+
 .skills-icons ul li .icon {
   color: #171717;
   font-size: 80px;
@@ -809,6 +829,13 @@ main {
   .skills-icons ul li .icon {
     font-size: 65px;
     width: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .skills-icons ul li .icon {
+    font-size: 45px;
+    width: 40px;
   }
 }
 
@@ -880,6 +907,12 @@ main {
 @media (max-width: 1000px) {
   .skills-icons ul li .firebase {
     width: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .skills-icons ul li .firebase {
+    width: 40px;
   }
 }
 
@@ -1158,13 +1191,8 @@ main {
 :root {
   --blackTheme: #171717;
   --whiteTheme: white;
-  --paleSpringBud: #DEDABA;
-  --goldCrayola: #E5C687;
-  --richBlackForeground: #171717;
   --white: #f8f8f8;
   --black: #222;
-  --msuGreen: #171717;
-  --gray: #eee;
   --Drk: url(../../../assets/Header-1.jpg);
   --Lgt: url(../../../assets/Header-2.jpg);
   --filterOn: brightness(0%);
