@@ -595,6 +595,12 @@ main {
   }
 }
 
+@media (max-width: 750px) {
+  .about-me-content {
+    margin: 0 25px;
+  }
+}
+
 .about-me-content h2, .about-me-content h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -602,6 +608,12 @@ main {
 
 .about-me-content h2 {
   font-size: 4rem;
+}
+
+@media (max-width: 750px) {
+  .about-me-content h2 {
+    font-size: 2.5rem;
+  }
 }
 
 .about-me-content h3 {
@@ -647,7 +659,7 @@ main {
   }
 }
 
-@media (max-width: 1260px) and (max-width: 750px) {
+@media (max-width: 750px) {
   .about-me-content p {
     font-size: calc(2.5rem - 1vw);
     line-height: 30px;
@@ -655,14 +667,7 @@ main {
   }
 }
 
-.about-me-content img {
-  width: 300px;
-  position: absolute;
-  left: 0%;
-  overflow: auto;
-}
-
-.about-me-content .resume-button {
+.resume-button {
   border: none;
   font-family: 'Oswald', sans-serif;
   margin-top: 30px;
@@ -672,12 +677,12 @@ main {
 }
 
 @media (max-width: 1260px) {
-  .about-me-content .resume-button {
+  .resume-button {
     margin-top: 10px;
   }
 }
 
-.about-me-content .resume-button:after {
+.resume-button:after {
   content: '';
   display: block;
   margin: auto;
@@ -688,7 +693,7 @@ main {
   transition: width .5s ease, background-color .5s ease;
 }
 
-.about-me-content .resume-button:hover:after {
+.resume-button:hover:after {
   width: 100%;
   background: var(--form);
 }
@@ -704,6 +709,15 @@ main {
     margin: 0 auto;
     margin-top: 100px;
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-me-images {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    max-width: 300px;
   }
 }
 
