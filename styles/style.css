@@ -935,6 +935,15 @@ main {
   margin-right: 50px;
 }
 
+@media (max-width: 1000px) {
+  .portfolio-container .portfolio-projects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .portfolio-container .portfolio-projects .project-image {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -943,6 +952,24 @@ main {
   -webkit-transition: 0.6s ease-in-out;
   transition: 0.6s ease-in-out;
   height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .portfolio-container .portfolio-projects .project-image {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .portfolio-container .portfolio-projects .project-image {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .portfolio-container .portfolio-projects .project-image {
+    padding: 0 25px;
+  }
 }
 
 .portfolio-container .portfolio-projects .project-image:hover,
@@ -957,6 +984,20 @@ main {
   width: 100%;
 }
 
+@media (max-width: 1000px) {
+  .portfolio-container .portfolio-projects .project-info {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 750px) {
+  .portfolio-container .portfolio-projects .project-info {
+    max-width: 500px;
+  }
+}
+
 .portfolio-container .portfolio-projects:nth-child(2),
 .portfolio-container .portfolio-projects:nth-child(4) {
   -webkit-box-pack: end;
@@ -966,6 +1007,31 @@ main {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+@media (max-width: 1000px) {
+  .portfolio-container .portfolio-projects:nth-child(2),
+  .portfolio-container .portfolio-projects:nth-child(4) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .portfolio-container .portfolio-projects:nth-child(2),
+  .portfolio-container .portfolio-projects:nth-child(4) {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 750px) {
+  .portfolio-container .portfolio-projects:nth-child(2),
+  .portfolio-container .portfolio-projects:nth-child(4) {
+    padding: 0 50px;
+  }
 }
 
 .portfolio-container .firebase,
@@ -983,9 +1049,21 @@ main {
   margin-bottom: 20px;
 }
 
+@media (max-width: 750px) {
+  .portfolio-container h5 {
+    font-size: 3rem;
+  }
+}
+
 .portfolio-container .project-description {
   font-size: 2rem;
   margin-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+  .portfolio-container .project-description {
+    font-size: 1.7rem;
+  }
 }
 
 .portfolio-container .project-links,
@@ -995,6 +1073,13 @@ main {
   text-transform: uppercase;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
+}
+
+@media (max-width: 750px) {
+  .portfolio-container .project-links,
+  .portfolio-container span {
+    font-size: 1.7rem;
+  }
 }
 
 .portfolio-container .project-links:after {
@@ -1022,8 +1107,20 @@ main {
   margin-top: 20px;
 }
 
+@media (max-width: 750px) {
+  .portfolio-container .icons {
+    font-size: 1rem;
+  }
+}
+
 .portfolio-container .created {
   text-transform: uppercase;
+}
+
+@media (max-width: 750px) {
+  .portfolio-container .created {
+    font-size: 1.7rem;
+  }
 }
 
 .portfolio-container .fridge {
