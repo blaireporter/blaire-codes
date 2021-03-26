@@ -107,40 +107,100 @@
                 color: #C03E82;
             }
 
+              .fa-html5{
+                animation: htmlColorIn 5s infinite alternate;
+            }
+            @keyframes htmlColorIn { 
+                    from { color: #E98348} 
+                }
+
             .fa-html5:hover,
             .fa-html5:focus{
                 color: #E98348;
             }
-
+            // ******CSS ICON*****
+             .fa-css3-alt{
+                animation: cssColorIn 5s infinite alternate;
+            }
+            @keyframes cssColorIn { 
+                    from { color: #62ABF5} 
+                }            
             .fa-css3-alt:hover,
             .fa-css3-alt:focus{
                 color: #62ABF5;
             }
 
+            // *****REACT ICON***** 
+            .fa-react{
+                animation: reactColorIn 5s infinite alternate;
+            }
+            @keyframes reactColorIn { 
+                    from { color: #64D8FD} 
+                }  
+
             .fa-react:hover,
             .fa-react:focus {
                 color: #64D8FD;
             }
+            // *****GITHUB ICON*****
+              .fa-github{
+                animation: githubColorIn 5s infinite alternate;
+            }
+            @keyframes githubColorIn { 
+                    from { color: #333232} 
+                } 
 
             .fa-github:hover,
             .fa-github:focus{
                 color: #333232;
             }
+            // *****GIT ICON*****
+              .fa-git-alt{
+                animation: gitColorIn 5s infinite alternate;
+            }
+            @keyframes gitColorIn { 
+                    from { color: #EE4C33} 
+                } 
 
             .fa-git-alt:hover,
             .fa-git-alt:focus{
                 color: #EE4C33;
             }
 
+            // *****COMMAND LINE ICON*****
+               .fa-terminal{
+                animation: clColorIn 5s infinite alternate;
+            }
+            @keyframes clColorIn { 
+                    from { color: #1ED215} 
+                } 
+
             .fa-terminal:hover,
             .fa-terminal:focus{
                 color: #1ED215;
             }
 
+            // *****ACCESSIBLITY ICON*****
+            .fa-universal-access{
+                animation: accessColorIn 5s infinite alternate;
+            }
+            @keyframes accessColorIn { 
+                    from { color: #155196} 
+                } 
+
+
             .fa-universal-access:hover,
             .fa-universal-access:focus {
                 color: #155196;
             }
+
+            // *****RESPONSIVE ICON*****
+              .fa-mobile-alt{
+                animation: resColorIn 5s infinite alternate;
+            }
+            @keyframes resColorIn { 
+                    from { color: #8641BE} 
+                } 
 
             .fa-mobile-alt:hover,
             .fa-mobile-alt:focus{

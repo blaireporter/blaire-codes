@@ -917,9 +917,43 @@ main {
   color: #C03E82;
 }
 
+.skills-icons ul li .fa-html5 {
+  -webkit-animation: htmlColorIn 5s infinite alternate;
+          animation: htmlColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes htmlColorIn {
+  from {
+    color: #E98348;
+  }
+}
+
+@keyframes htmlColorIn {
+  from {
+    color: #E98348;
+  }
+}
+
 .skills-icons ul li .fa-html5:hover,
 .skills-icons ul li .fa-html5:focus {
   color: #E98348;
+}
+
+.skills-icons ul li .fa-css3-alt {
+  -webkit-animation: cssColorIn 5s infinite alternate;
+          animation: cssColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes cssColorIn {
+  from {
+    color: #62ABF5;
+  }
+}
+
+@keyframes cssColorIn {
+  from {
+    color: #62ABF5;
+  }
 }
 
 .skills-icons ul li .fa-css3-alt:hover,
@@ -927,9 +961,43 @@ main {
   color: #62ABF5;
 }
 
+.skills-icons ul li .fa-react {
+  -webkit-animation: reactColorIn 5s infinite alternate;
+          animation: reactColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes reactColorIn {
+  from {
+    color: #64D8FD;
+  }
+}
+
+@keyframes reactColorIn {
+  from {
+    color: #64D8FD;
+  }
+}
+
 .skills-icons ul li .fa-react:hover,
 .skills-icons ul li .fa-react:focus {
   color: #64D8FD;
+}
+
+.skills-icons ul li .fa-github {
+  -webkit-animation: githubColorIn 5s infinite alternate;
+          animation: githubColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes githubColorIn {
+  from {
+    color: #333232;
+  }
+}
+
+@keyframes githubColorIn {
+  from {
+    color: #333232;
+  }
 }
 
 .skills-icons ul li .fa-github:hover,
@@ -937,9 +1005,43 @@ main {
   color: #333232;
 }
 
+.skills-icons ul li .fa-git-alt {
+  -webkit-animation: gitColorIn 5s infinite alternate;
+          animation: gitColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes gitColorIn {
+  from {
+    color: #EE4C33;
+  }
+}
+
+@keyframes gitColorIn {
+  from {
+    color: #EE4C33;
+  }
+}
+
 .skills-icons ul li .fa-git-alt:hover,
 .skills-icons ul li .fa-git-alt:focus {
   color: #EE4C33;
+}
+
+.skills-icons ul li .fa-terminal {
+  -webkit-animation: clColorIn 5s infinite alternate;
+          animation: clColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes clColorIn {
+  from {
+    color: #1ED215;
+  }
+}
+
+@keyframes clColorIn {
+  from {
+    color: #1ED215;
+  }
 }
 
 .skills-icons ul li .fa-terminal:hover,
@@ -947,9 +1049,43 @@ main {
   color: #1ED215;
 }
 
+.skills-icons ul li .fa-universal-access {
+  -webkit-animation: accessColorIn 5s infinite alternate;
+          animation: accessColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes accessColorIn {
+  from {
+    color: #155196;
+  }
+}
+
+@keyframes accessColorIn {
+  from {
+    color: #155196;
+  }
+}
+
 .skills-icons ul li .fa-universal-access:hover,
 .skills-icons ul li .fa-universal-access:focus {
   color: #155196;
+}
+
+.skills-icons ul li .fa-mobile-alt {
+  -webkit-animation: resColorIn 5s infinite alternate;
+          animation: resColorIn 5s infinite alternate;
+}
+
+@-webkit-keyframes resColorIn {
+  from {
+    color: #8641BE;
+  }
+}
+
+@keyframes resColorIn {
+  from {
+    color: #8641BE;
+  }
 }
 
 .skills-icons ul li .fa-mobile-alt:hover,
