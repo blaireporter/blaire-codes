@@ -359,6 +359,15 @@ header {
   transition: 0.4s ease-in-out;
 }
 
+@media (max-width: 750px) {
+  .icon {
+    font-size: 45px;
+    width: 40px;
+    -webkit-animation: fadeIn 5s infinite alternate;
+            animation: fadeIn 5s infinite alternate;
+  }
+}
+
 .fa-js-square:hover,
 .fa-js-square:focus {
   color: #F9E000;
@@ -415,16 +424,327 @@ header {
           filter: var(--filtered);
 }
 
+@media (max-width: 750px) {
+  .fa-linkedin {
+    -webkit-animation: liColorIn 5s infinite alternate;
+            animation: liColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes liColorIn {
+  from {
+    color: #0080CC;
+  }
+}
+
+@keyframes liColorIn {
+  from {
+    color: #0080CC;
+  }
+}
+
 .fa-linkedin:hover {
   color: #0080CC;
+}
+
+@media (max-width: 750px) {
+  .fa-calendar-check {
+    -webkit-animation: calColorIn 5s infinite alternate;
+            animation: calColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes calColorIn {
+  from {
+    color: #37BF91;
+  }
+}
+
+@keyframes calColorIn {
+  from {
+    color: #37BF91;
+  }
 }
 
 .fa-calendar-check:hover {
   color: #37BF91;
 }
 
+@media (max-width: 750px) {
+  .fa-twitter-square {
+    -webkit-animation: twitterColorIn 5s infinite alternate;
+            animation: twitterColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes twitterColorIn {
+  from {
+    color: #1DA1F2;
+  }
+}
+
+@keyframes twitterColorIn {
+  from {
+    color: #1DA1F2;
+  }
+}
+
 .fa-twitter-square:hover {
   color: #1DA1F2;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+}
+
+@media (max-width: 750px) {
+  .fa-js-square {
+    -webkit-animation: jsColorIn 5s infinite alternate;
+            animation: jsColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes jsColorIn {
+  from {
+    color: #F9E000;
+  }
+}
+
+@keyframes jsColorIn {
+  from {
+    color: #F9E000;
+  }
+}
+
+.fa-js-square:hover,
+.fa-js-square:focus {
+  color: #F9E000;
+}
+
+@media (max-width: 750px) {
+  .fa-sass {
+    -webkit-animation: sassColorIn 5s infinite alternate;
+            animation: sassColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes sassColorIn {
+  from {
+    color: #C03E82;
+  }
+}
+
+@keyframes sassColorIn {
+  from {
+    color: #C03E82;
+  }
+}
+
+.fa-sass:hover,
+.fa-sass:focus {
+  color: #C03E82;
+}
+
+@media (max-width: 750px) {
+  .fa-html5 {
+    -webkit-animation: htmlColorIn 5s infinite alternate;
+            animation: htmlColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes htmlColorIn {
+  from {
+    color: #E98348;
+  }
+}
+
+@keyframes htmlColorIn {
+  from {
+    color: #E98348;
+  }
+}
+
+.fa-html5:hover,
+.fa-html5:focus {
+  color: #E98348;
+}
+
+@media (max-width: 750px) {
+  .fa-css3-alt {
+    -webkit-animation: cssColorIn 5s infinite alternate;
+            animation: cssColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes cssColorIn {
+  from {
+    color: #62ABF5;
+  }
+}
+
+@keyframes cssColorIn {
+  from {
+    color: #62ABF5;
+  }
+}
+
+.fa-css3-alt:hover,
+.fa-css3-alt:focus {
+  color: #62ABF5;
+}
+
+@media (max-width: 750px) {
+  .fa-react {
+    -webkit-animation: reactColorIn 5s infinite alternate;
+            animation: reactColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes reactColorIn {
+  from {
+    color: #64D8FD;
+  }
+}
+
+@keyframes reactColorIn {
+  from {
+    color: #64D8FD;
+  }
+}
+
+.fa-react:hover,
+.fa-react:focus {
+  color: #64D8FD;
+}
+
+@media (max-width: 750px) {
+  .fa-github {
+    -webkit-animation: githubColorIn 5s infinite alternate;
+            animation: githubColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes githubColorIn {
+  from {
+    color: #333232;
+  }
+}
+
+@keyframes githubColorIn {
+  from {
+    color: #333232;
+  }
+}
+
+.fa-github:hover,
+.fa-github:focus {
+  color: #333232;
+}
+
+@media (max-width: 750px) {
+  .fa-git-alt {
+    -webkit-animation: gitColorIn 5s infinite alternate;
+            animation: gitColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes gitColorIn {
+  from {
+    color: #EE4C33;
+  }
+}
+
+@keyframes gitColorIn {
+  from {
+    color: #EE4C33;
+  }
+}
+
+.fa-git-alt:hover,
+.fa-git-alt:focus {
+  color: #EE4C33;
+}
+
+@media (max-width: 750px) {
+  .fa-terminal {
+    -webkit-animation: clColorIn 5s infinite alternate;
+            animation: clColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes clColorIn {
+  from {
+    color: #1ED215;
+  }
+}
+
+@keyframes clColorIn {
+  from {
+    color: #1ED215;
+  }
+}
+
+.fa-terminal:hover,
+.fa-terminal:focus {
+  color: #1ED215;
+}
+
+@media (max-width: 750px) {
+  .fa-universal-access {
+    -webkit-animation: accessColorIn 5s infinite alternate;
+            animation: accessColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes accessColorIn {
+  from {
+    color: #155196;
+  }
+}
+
+@keyframes accessColorIn {
+  from {
+    color: #155196;
+  }
+}
+
+.fa-universal-access:hover,
+.fa-universal-access:focus {
+  color: #155196;
+}
+
+@media (max-width: 750px) {
+  .fa-mobile-alt {
+    -webkit-animation: resColorIn 5s infinite alternate;
+            animation: resColorIn 5s infinite alternate;
+  }
+}
+
+@-webkit-keyframes resColorIn {
+  from {
+    color: #8641BE;
+  }
+}
+
+@keyframes resColorIn {
+  from {
+    color: #8641BE;
+  }
+}
+
+.fa-mobile-alt:hover,
+.fa-mobile-alt:focus {
+  color: #8641BE;
 }
 
 nav ul {
@@ -868,13 +1188,6 @@ main {
   }
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%);
-  }
-}
-
 @keyframes fadeIn {
   from {
     -webkit-filter: brightness(100%);
@@ -891,12 +1204,6 @@ main {
   .skills-icons ul li .fa-js-square {
     -webkit-animation: jsColorIn 5s infinite alternate;
             animation: jsColorIn 5s infinite alternate;
-  }
-}
-
-@-webkit-keyframes jsColorIn {
-  from {
-    color: #F9E000;
   }
 }
 
@@ -918,12 +1225,6 @@ main {
   }
 }
 
-@-webkit-keyframes sassColorIn {
-  from {
-    color: #C03E82;
-  }
-}
-
 @keyframes sassColorIn {
   from {
     color: #C03E82;
@@ -939,12 +1240,6 @@ main {
   .skills-icons ul li .fa-html5 {
     -webkit-animation: htmlColorIn 5s infinite alternate;
             animation: htmlColorIn 5s infinite alternate;
-  }
-}
-
-@-webkit-keyframes htmlColorIn {
-  from {
-    color: #E98348;
   }
 }
 
@@ -966,12 +1261,6 @@ main {
   }
 }
 
-@-webkit-keyframes cssColorIn {
-  from {
-    color: #62ABF5;
-  }
-}
-
 @keyframes cssColorIn {
   from {
     color: #62ABF5;
@@ -987,12 +1276,6 @@ main {
   .skills-icons ul li .fa-react {
     -webkit-animation: reactColorIn 5s infinite alternate;
             animation: reactColorIn 5s infinite alternate;
-  }
-}
-
-@-webkit-keyframes reactColorIn {
-  from {
-    color: #64D8FD;
   }
 }
 
@@ -1014,12 +1297,6 @@ main {
   }
 }
 
-@-webkit-keyframes githubColorIn {
-  from {
-    color: #333232;
-  }
-}
-
 @keyframes githubColorIn {
   from {
     color: #333232;
@@ -1035,12 +1312,6 @@ main {
   .skills-icons ul li .fa-git-alt {
     -webkit-animation: gitColorIn 5s infinite alternate;
             animation: gitColorIn 5s infinite alternate;
-  }
-}
-
-@-webkit-keyframes gitColorIn {
-  from {
-    color: #EE4C33;
   }
 }
 
@@ -1062,12 +1333,6 @@ main {
   }
 }
 
-@-webkit-keyframes clColorIn {
-  from {
-    color: #1ED215;
-  }
-}
-
 @keyframes clColorIn {
   from {
     color: #1ED215;
@@ -1086,12 +1351,6 @@ main {
   }
 }
 
-@-webkit-keyframes accessColorIn {
-  from {
-    color: #155196;
-  }
-}
-
 @keyframes accessColorIn {
   from {
     color: #155196;
@@ -1107,12 +1366,6 @@ main {
   .skills-icons ul li .fa-mobile-alt {
     -webkit-animation: resColorIn 5s infinite alternate;
             animation: resColorIn 5s infinite alternate;
-  }
-}
-
-@-webkit-keyframes resColorIn {
-  from {
-    color: #8641BE;
   }
 }
 
@@ -1226,6 +1479,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 50px;
   }
 }
 

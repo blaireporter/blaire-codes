@@ -55,6 +55,11 @@ body {
                 font-size: 80px;
                 color: var(--fontColor);
                 transition: 0.4s ease-in-out;
+                @media(max-width: 750px){
+                    font-size: 45px;
+                    width: 40px;
+                    animation: fadeIn 5s infinite alternate;
+                }
             }
 
             .fa-js-square:hover,
@@ -111,15 +116,190 @@ body {
             .jquery {
                 filter: var(--filtered);
             }
-
+            // *****LINKEDIN LOGO*****
+            .fa-linkedin{
+                @media(max-width: 750px){
+                       animation: liColorIn 5s infinite alternate;
+                 }
+            }
+            @keyframes liColorIn { 
+                from { color: #0080CC} 
+            }
             .fa-linkedin:hover{
                 color: #0080CC;
+            }
+
+            .fa-calendar-check{
+                @media(max-width: 750px){
+                       animation: calColorIn 5s infinite alternate;
+                 }
+            }
+            @keyframes calColorIn { 
+                from { color: #37BF91} 
             }
 
             .fa-calendar-check:hover{
                 color: #37BF91;
             }
 
+            .fa-twitter-square{
+                @media(max-width: 750px){
+                       animation: twitterColorIn 5s infinite alternate;
+                 }
+            }
+             @keyframes twitterColorIn { 
+                from { color: #1DA1F2} 
+            }
             .fa-twitter-square:hover{
                 color: #1DA1F2;
             }
+                
+                @keyframes fadeIn { 
+                    from { filter: brightness(100%)} 
+                }
+
+            .fa-js-square{
+                @media(max-width: 750px){
+                    animation: jsColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes jsColorIn { 
+                from { color: #F9E000} 
+            }
+            .fa-js-square:hover,
+            .fa-js-square:focus {
+                color: #F9E000;
+            }
+
+            .fa-sass{
+                @media(max-width: 750px){
+                    animation: sassColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes sassColorIn { 
+                    from { color: #C03E82} 
+                }
+            .fa-sass:hover,
+            .fa-sass:focus{
+                color: #C03E82;
+            }
+
+              .fa-html5{
+                  @media(max-width: 750px){
+                      animation: htmlColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes htmlColorIn { 
+                    from { color: #E98348} 
+                }
+
+            .fa-html5:hover,
+            .fa-html5:focus{
+                color: #E98348;
+            }
+            // ******CSS ICON*****
+             .fa-css3-alt{
+                 @media(max-width: 750px){
+                     animation: cssColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes cssColorIn { 
+                    from { color: #62ABF5} 
+                }            
+            .fa-css3-alt:hover,
+            .fa-css3-alt:focus{
+                color: #62ABF5;
+            }
+
+            // *****REACT ICON***** 
+            .fa-react{
+                @media(max-width: 750px){
+                    animation: reactColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes reactColorIn { 
+                    from { color: #64D8FD} 
+                }  
+
+            .fa-react:hover,
+            .fa-react:focus {
+                color: #64D8FD;
+            }
+            // *****GITHUB ICON*****
+              .fa-github{
+                  @media(max-width: 750px){
+                      animation: githubColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes githubColorIn { 
+                    from { color: #333232} 
+                } 
+
+            .fa-github:hover,
+            .fa-github:focus{
+                color: #333232;
+            }
+            // *****GIT ICON*****
+              .fa-git-alt{
+                  @media(max-width: 750px){
+                     animation: gitColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes gitColorIn { 
+                    from { color: #EE4C33} 
+                } 
+
+            .fa-git-alt:hover,
+            .fa-git-alt:focus{
+                color: #EE4C33;
+            }
+
+            // *****COMMAND LINE ICON*****
+               .fa-terminal{
+                   @media(max-width: 750px){
+                       animation: clColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes clColorIn { 
+                    from { color: #1ED215} 
+                } 
+
+            .fa-terminal:hover,
+            .fa-terminal:focus{
+                color: #1ED215;
+            }
+
+            // *****ACCESSIBLITY ICON*****
+            .fa-universal-access{
+                @media(max-width: 750px){
+                    animation: accessColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes accessColorIn { 
+                    from { color: #155196} 
+                } 
+
+
+            .fa-universal-access:hover,
+            .fa-universal-access:focus {
+                color: #155196;
+            }
+
+            // *****RESPONSIVE ICON*****
+              .fa-mobile-alt{
+                  @media(max-width: 750px){
+                      animation: resColorIn 5s infinite alternate;
+                }
+            }
+            @keyframes resColorIn { 
+                    from { color: #8641BE} 
+                } 
+
+            .fa-mobile-alt:hover,
+            .fa-mobile-alt:focus{
+                color: #8641BE;
+            }
+
+        
+    
+    
