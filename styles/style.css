@@ -406,21 +406,6 @@ header {
   color: #1DA1F2;
 }
 
-.logo {
-  height: 40px;
-  margin: 0 auto;
-  margin: 15px 0 15px 40px;
-}
-
-.logo-link {
-  border-bottom: none;
-}
-
-.logo-link a:hover,
-.logo-link a:focus {
-  border-bottom: none;
-}
-
 @media (max-width: 700px) {
   .full-screen-nav {
     display: none;
@@ -448,7 +433,6 @@ nav ul {
       -ms-flex-pack: end;
           justify-content: flex-end;
   list-style: none;
-  margin-top: -80px;
   margin-right: 80px;
   padding: 15px 0 20px 0;
 }
@@ -692,7 +676,7 @@ main {
 .about-me-content p {
   margin-top: 30px;
   font-size: 2rem;
-  max-width: 700px;
+  max-width: 600px;
   font-family: 'Oswald', sans-serif;
   line-height: 25px;
 }
@@ -754,6 +738,7 @@ main {
 
 .about-me-images {
   margin: 100px 0;
+  margin-left: 40px;
   position: relative;
 }
 
